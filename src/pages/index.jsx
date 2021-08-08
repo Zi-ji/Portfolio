@@ -1,6 +1,6 @@
-import * as React from "react"
-import Navbar from '../components/navbar'
+import React from 'react'
 import Home from './Home'
+import Project from './Project'
 
 const IndexPage = () => {
   return (
@@ -9,8 +9,8 @@ const IndexPage = () => {
         <title>Portfolio</title>
       </head>
       <body className="bg-background">
-        {/* <Navbar /> */}
         <Home />
+        <Project />
       </body>
     </>
   )

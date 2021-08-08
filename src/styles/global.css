@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  .page-container{
+  .page-container {
     @apply min-h-screen w-full flex flex-col items-center
+  }
+  .main-container {
+    @apply max-w-full flex-grow flex flex-col items-stretch
   }
   .navlink {
     @apply

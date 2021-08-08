@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="page-container">
       <Navbar />
-      <div className="w-196 max-w-full flex-grow flex flex-col justify-start items-stretch">
+      <main className="w-196 main-container">
         <div className="flex sm:flex-col-reverse sm:items-center flex-row justify-between mt-24 sm:mt-6">
           <p className="text-5xl text-primary font-bold leading-normal">
             HELLO{' '}👋,<br />
@@ -39,7 +39,7 @@ const Home = () => {
             <div className="animate-bounce mt-4"><Arrow /></div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   )
 }
