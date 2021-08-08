@@ -12,7 +12,8 @@ module.exports = {
       primary: '#27476E',
       secondary: '#CE4B27',
       transparent: 'transparent',
-      test: 'gray'
+      test: 'gray',
+      background2: '#F5F2E0'
     },
     screens: {
       '2xl': {'max': '1535px'},
