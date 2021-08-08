@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .page-container{
+    @apply min-h-screen w-full flex flex-col items-center
+  }
+  .navlink {
+    @apply
+      transition
+      border-b-4
+      border-transparent
+      duration-500
+      ml-4
+      text-primary
+      text-xl
+      font-semibold
+      cursor-pointer
+      hover:text-secondary
+      hover:border-secondary;
+  }
+}
