@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="page-container">
       <Navbar />
-      <main className="w-196 main-container">
+      <main className="w-196 md:w-168 main-container">
         <div className="flex sm:flex-col-reverse sm:items-center flex-row justify-between mt-24 sm:mt-6">
           <p className="text-5xl text-primary font-bold leading-normal">
             HELLO{' '}👋,<br />
