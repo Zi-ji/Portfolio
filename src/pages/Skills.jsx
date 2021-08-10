@@ -1,6 +1,7 @@
 import React from 'react'
 import Course from '../components/Course'
 import Skillboard from '../components/Skillboard'
+import Arrow from '../images/arrow.inline.svg'
 
 const Skills = () => {
   return (
@@ -52,6 +53,9 @@ const Skills = () => {
           </div>
         </div>
       </main>
+      <div className="sm:hidden flex flex-col justify-center items-center mb-12">
+        <div className="animate-bounce mt-4"><Arrow /></div>
+      </div>
     </div>
   )
 }

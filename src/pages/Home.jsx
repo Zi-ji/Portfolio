@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar'
 import Avatar from '../images/Avatar.png'
 import Arrow from '../images/arrow.inline.svg'
+
 const Home = () => {
   return (
     <div className="page-container">
