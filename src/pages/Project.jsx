@@ -38,7 +38,6 @@ const Project = () => {
           />
         </div>
         <div className="sm:hidden flex flex-col justify-center items-center mb-4">
-          <p className="text-lg text-primary font-semibold align-top">Learn more about his education and skills 📚</p>
           <div className="animate-bounce mt-4"><Arrow /></div>
         </div>
       </main>

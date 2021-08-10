@@ -27,15 +27,14 @@ const Home = () => {
               <span className="text-secondary">Zhijie Zhu</span>{' '}is currently a 3rd year 
               student studying Bachelor of Computer Science and Commerce at{' '}
               <a className="text-secondary">UNSW</a>. You can also call him Richard. He
-              enjoys thinking, learning new things and making cool stuffs. He recently
-              fell in love with <span className="text-secondary">JavaScript</span>.<br/><br/>
-              He is currently based in Sydney. You can <a className="text-secondary">scroll down</a>{' '}
-              to know more about him.
+              enjoys thinking, learning new things and making cool stuffs. He is recently
+              learning <span className="text-secondary">JavaScript</span>.<br/><br/>
+              He is currently based in Sydney. You can learn more about his projects, education and skills here.
               Feel free to <a className="text-secondary">contact</a>{' '}him as well at any time.
             </p>
           </div>
           <div className="sm:hidden flex flex-col justify-center items-center mb-4">
-            <p className="text-lg text-primary font-semibold align-top">Learn more about his projects 💻</p>
+            <p className="text-lg text-primary font-semibold align-top">Scroll Down 🖱</p>
             <div className="animate-bounce mt-4"><Arrow /></div>
           </div>
         </div>
