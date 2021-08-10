@@ -1,5 +1,6 @@
 import React from 'react'
 import Course from '../components/Course'
+import Skillboard from '../components/Skillboard'
 
 const Skills = () => {
   return (
@@ -34,6 +35,12 @@ const Skills = () => {
           <div>
             <p className="text-3xl text-primary font-bold">Skills ⛏</p>
             <p className="text-lg text-primary font-medium">Tools and Technologies I've used</p>
+          </div>
+          <div>
+            <Skillboard
+              title="WEB FRONTEND"
+              items={['Javascript', 'TypeScript', 'ReactJS', 'Redux', 'Material-UI', 'Tailwind-CSS']}
+            />
           </div>
         </div>
       </main>

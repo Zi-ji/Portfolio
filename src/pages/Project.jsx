@@ -33,7 +33,7 @@ const Project = () => {
             title="*this"
             notes={{ title: 'Personal Portfolio' }}
             description="The current website. Built with GatsbyJS and Tailwind CSS. Hope you like it. :)"
-            technologies={['ReactJS', 'GatsbyJS']}
+            technologies={['GatsbyJS', 'Tailwind-CSS']}
             source="https://github.com/Zi-ji/Portfolio"
           />
         </div>

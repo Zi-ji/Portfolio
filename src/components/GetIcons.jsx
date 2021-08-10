@@ -5,6 +5,7 @@ import MaterialIcon from '../images/material.inline.svg'
 import RNIcon from '../images/react_native.inline.svg'
 import TSIcon from '../images/typescript.inline.svg'
 import GatsbyIcon from '../images/gatsbyjs.inline.svg'
+import TailwindIcon from '../images/tailwindcss.inline.svg'
 
 const GetIcons = (string) => {
   switch (string) {
@@ -20,6 +21,8 @@ const GetIcons = (string) => {
       return <TSIcon />
     case 'GatsbyJS':
       return <GatsbyIcon />
+    case 'Tailwind-CSS':
+      return <TailwindIcon />
     default:
       break;
   }
