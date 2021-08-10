@@ -1,33 +1,10 @@
 import React from 'react'
-import ReactIcon from '../images/react.inline.svg'
-import FirebaseIcon from '../images/firebase.inline.svg'
 import GithubIcon from '../images/github.inline.svg'
-import MaterialIcon from '../images/material.inline.svg'
-import RNIcon from '../images/react_native.inline.svg'
 import YtbIcon from '../images/youtube.inline.svg'
-import TSIcon from '../images/typescript.inline.svg'
-import GatsbyIcon from '../images/gatsbyjs.inline.svg'
+
+import GetIcons from './GetIcons'
 
 const ProjectCard = ({ title, notes, description, technologies, source, demo }) => {
-
-  const getIcon = (string) => {
-    switch (string) {
-      case 'ReactJS':
-        return <ReactIcon />
-      case 'Firebase':
-        return <FirebaseIcon />
-      case 'Material-UI':
-        return <MaterialIcon />
-      case 'React Native':
-        return <RNIcon />
-      case 'TypeScript':
-        return <TSIcon />
-      case 'GatsbyJS':
-        return <GatsbyIcon />
-      default:
-        break;
-    }
-  }
 
   return (
     <div className="project-card card-style">
@@ -53,7 +30,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo }) 
             technologies.map(item => {
               return (
                 <div className="flex flex-row">
-                  {getIcon(item)}
+                  {GetIcons(item)}
                   <p className="font-semibold text-secondary ml-2">{item}</p>
                 </div>
               )
