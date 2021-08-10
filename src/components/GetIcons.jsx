@@ -6,6 +6,9 @@ import RNIcon from '../images/react_native.inline.svg'
 import TSIcon from '../images/typescript.inline.svg'
 import GatsbyIcon from '../images/gatsbyjs.inline.svg'
 import TailwindIcon from '../images/tailwindcss.inline.svg'
+import JSIcon from '../images/javascript.inline.svg'
+import ReduxIcon from '../images/redux.inline.svg'
+
 
 const GetIcons = (string) => {
   switch (string) {
@@ -23,6 +26,10 @@ const GetIcons = (string) => {
       return <GatsbyIcon />
     case 'Tailwind-CSS':
       return <TailwindIcon />
+    case 'JavaScript':
+      return <JSIcon />
+    case 'Redux':
+      return <ReduxIcon />
     default:
       break;
   }

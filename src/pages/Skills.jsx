@@ -31,7 +31,7 @@ const Skills = () => {
           />
         </div>
         <div className="sm:hidden h-96 border-r-4 self-center border-primary" /> 
-        <div className="flex-1 flex flex-col pl-12 pt-32">
+        <div className="flex-1 flex flex-col justify-center pl-12 pt-32">
           <div>
             <p className="text-3xl text-primary font-bold">Skills ⛏</p>
             <p className="text-lg text-primary font-medium">Tools and Technologies I've used</p>
@@ -39,7 +39,7 @@ const Skills = () => {
           <div>
             <Skillboard
               title="WEB FRONTEND"
-              items={['Javascript', 'TypeScript', 'ReactJS', 'Redux', 'Material-UI', 'Tailwind-CSS']}
+              items={['JavaScript', 'TypeScript', 'ReactJS', 'Redux', 'Material-UI', 'Tailwind-CSS']}
             />
           </div>
         </div>
