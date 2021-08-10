@@ -30,7 +30,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo }) 
   }
 
   return (
-    <div className="project-card">
+    <div className="project-card card-style">
       <div className="h-full flex-1 flex flex-col justify-around pt-2 pb-2 sm:pt-3 sm:pr-3">
         <div>
           <p className="text-2xl text-secondary font-bold">{title}</p>
