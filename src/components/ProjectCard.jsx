@@ -20,7 +20,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo }) 
           {description}
         </p>
       </div>
-      <div className="sm:hidden h-32 ml-20 border-r-4 border-primary mt-4 mb-4" />
+      <div className="md:hidden h-32 ml-20 border-r-4 border-primary mt-4 mb-4" />
       <div className="h-full flex-1 flex flex-col md:hidden pl-12 pt-4 pb-4">
         <div className="flex-1 flex flex-col justify-around">
           <p className="text-base text-primary font-bold sm:text-s">

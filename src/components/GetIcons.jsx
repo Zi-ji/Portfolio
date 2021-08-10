@@ -8,6 +8,12 @@ import GatsbyIcon from '../images/gatsbyjs.inline.svg'
 import TailwindIcon from '../images/tailwindcss.inline.svg'
 import JSIcon from '../images/javascript.inline.svg'
 import ReduxIcon from '../images/redux.inline.svg'
+import JavaIcon from '../images/java.inline.svg'
+import PythonIcon from '../images/python.inline.svg'
+import ShellIcon from '../images/shell.inline.svg'
+import PerlIcon from '../images/perl.inline.svg'
+import PostgreIcon from '../images/postgresql.inline.svg'
+import CPPIcon from '../images/CPP.inline.svg'
 
 
 const GetIcons = (string) => {
@@ -30,6 +36,18 @@ const GetIcons = (string) => {
       return <JSIcon />
     case 'Redux':
       return <ReduxIcon />
+    case 'Java':
+      return <JavaIcon />
+    case 'Python':
+      return <PythonIcon />
+    case 'Shell':
+      return <ShellIcon />
+    case 'Perl':
+      return <PerlIcon />
+    case 'PostgreSQL':
+      return <PostgreIcon />
+    case 'C++':
+      return <CPPIcon />
     default:
       break;
   }

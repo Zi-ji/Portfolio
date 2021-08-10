@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div className="page-container">
       <main className="w-240 min-h-full max-w-full flex-1 flex flex-row items-stretch sm:flex-col">
-        <div className="flex-1 flex flex-col pl-8 pr-8 justify-center">
+        <div className="flex-1 flex flex-col pl-8 pr-8 pt-20">
           <div className="sm:flex sm:flex-col sm:items-center">
             <p className="text-3xl text-primary font-bold">Education 📒</p>
             <p className="text-lg text-primary font-medium">Relavant courses I've completed</p>
@@ -31,7 +31,7 @@ const Skills = () => {
           />
         </div>
         <div className="sm:hidden h-96 border-r-4 self-center border-primary" /> 
-        <div className="flex-1 flex flex-col justify-center pl-12 pt-32">
+        <div className="flex-1 flex flex-col pl-12 pr-8 pt-20">
           <div>
             <p className="text-3xl text-primary font-bold">Skills ⛏</p>
             <p className="text-lg text-primary font-medium">Tools and Technologies I've used</p>
@@ -40,6 +40,14 @@ const Skills = () => {
             <Skillboard
               title="WEB FRONTEND"
               items={['JavaScript', 'TypeScript', 'ReactJS', 'Redux', 'Material-UI', 'Tailwind-CSS']}
+            />
+            <Skillboard
+              title="BACKEND"
+              items={['Firebase', 'Python', 'Java', 'PostgreSQL']}
+            />
+            <Skillboard
+              title="Also had experiences with..."
+              items={['C++', 'Shell', 'Perl']}
             />
           </div>
         </div>

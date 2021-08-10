@@ -3,8 +3,8 @@ import GetIcons from './GetIcons'
 
 const Skillboard = ({ title, items }) => {
   return (
-    <div className="h-60 ml-8 mt-8 flex flex-col">
-      <p className="text-xl text-secondary font-bold">{title}</p>
+    <div className="ml-8 mt-8 flex flex-col">
+      <p className="text-lg text-primary font-bold">{title}</p>
       {items.map(item => {
         return (
           <div className="flex flex-row mt-2">
