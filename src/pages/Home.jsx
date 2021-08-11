@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import Avatar from '../images/Avatar.png'
 import Arrow from '../images/arrow.inline.svg'
 
@@ -26,7 +26,7 @@ const Home = () => {
             </p>
             <p className="sm:text-base mt-4 text-xl text-primary font-semibold leading-normal sm:ml-8 sm:mr-8">
               <span className="text-secondary">Zhijie Zhu</span>{' '}is currently a 3rd year 
-              student studying Bachelor of Computer Science and Commerce at{' '}
+              student studying <a className="text-secondary">Bachelor of Computer Science and Commerce</a> at{' '}
               <a className="text-secondary">UNSW</a>. You can also call him Richard. He
               enjoys thinking, learning new things and making cool stuffs. He is recently
               learning <span className="text-secondary">JavaScript</span>.<br/><br/>
