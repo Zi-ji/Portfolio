@@ -57,7 +57,13 @@ const Skills = ({ refProp, scrollToContact }) => {
         </div>
       </main>
       <div className="sm:hidden flex flex-col justify-center items-center mb-12">
-        <a href="#Contact" onClick={scrollToContact} className="animate-bounce mt-4"><Arrow /></a>
+        <a
+          aria-label="Go to contact page"
+          href="#Contact" onClick={scrollToContact}
+          className="animate-bounce mt-4"
+        >
+          <Arrow />
+        </a>
       </div>
     </div>
   )

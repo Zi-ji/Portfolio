@@ -27,9 +27,9 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
             Technologies
           </p>
           {technologies && 
-            technologies.map(item => {
+            technologies.map((item, idx) => {
               return (
-                <div className="flex flex-row">
+                <div key={idx} className="flex flex-row">
                   {GetIcons(item)}
                   <p className="font-semibold text-primary ml-2">{item}</p>
                 </div>
@@ -44,7 +44,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
                 <p className="text-base text-primary font-bold sm:text-s pr-2">
                   Source Code
                 </p>
-                <a href={source}><GithubIcon /></a>
+                <a aria-label="Github source page" href={source}><GithubIcon /></a>
               </div>
             }
             {demo &&
@@ -52,7 +52,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
                 <p className="text-base text-primary font-bold sm:text-s pr-2">
                   Demo
                 </p>
-                <a href={demo}><YtbIcon /></a>
+                <a aria-label="Demo video on youtube" href={demo}><YtbIcon /></a>
               </div>
             }
           </div>

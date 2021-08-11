@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
 import Home from './Home'
 import Project from './Project'
 import Skills from './Skills'
@@ -15,10 +16,12 @@ const IndexPage = () => {
 
   return (
     <>
-      <head>
-        <title>Portfolio</title>
-      </head>
-      <body className="bg-background">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Zhijie Zhu</title>
+        <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+      </Helmet>
+      <div className="bg-background">
         <Home
           scrollToSkills={scrollToSkills}
           scrollToProject={scrollToProject}
@@ -33,7 +36,7 @@ const IndexPage = () => {
           scrollToContact={scrollToContact}
         />
         <Contact refProp={contactRef} />
-      </body>
+      </div>
     </>
   )
 }

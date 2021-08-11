@@ -21,13 +21,13 @@ const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
           </p>
           <img className="w-36 h-44" src={Avatar} alt="Avatar" />
         </div>
-        <p className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
+        <div className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
           <TextLoop interval={2000}>
             <span>I learn how to code. 💻</span>
             <span>I love discovering. 🧑</span>
             <span>I'm ready for the future. 🔜</span>
           </TextLoop>
-        </p>
+        </div>
         <div className="flex-grow flex flex-col justify-between sm:justify-center">
           <div className="mt-8" />
           <div>
@@ -50,7 +50,14 @@ const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
           </div>
           <div className="sm:hidden flex flex-col justify-center items-center">
             <p className="xl:hidden text-lg text-primary font-semibold align-top">Scroll Down 🖱</p>
-            <a href="#Projects" onClick={scrollToProject} className="animate-bounce mt-2 mb-2"><Arrow /></a>
+            <a
+              aria-label="Go to projects page"
+              href="#Projects"
+              onClick={scrollToProject}
+              className="animate-bounce mt-2 mb-2"
+            >
+              <Arrow />
+            </a>
           </div>
         </div>
       </main>

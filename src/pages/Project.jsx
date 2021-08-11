@@ -35,14 +35,21 @@ const Project = ({ refProp, scrollToSkills }) => {
           <ProjectCard
             title="*this"
             notes={{ title: 'Personal Portfolio' }}
-            description="The current website. Built with GatsbyJS and Tailwind CSS. Hope you like it. :)"
+            description="The current website. A single page app built with GatsbyJS and Tailwind CSS. I hope you like it :)"
             technologies={['GatsbyJS', 'Tailwind-CSS']}
             source="https://github.com/Zi-ji/Portfolio"
             link1="https://github.com/Zi-ji/Portfolio"
           />
         </div>
         <div className="sm:hidden flex flex-col justify-center items-center mb-4">
-          <a href="#Education&Skills" onClick={scrollToSkills} className="animate-bounce mt-4"><Arrow /></a>
+          <a
+            aria-label="Go to education and skills page"
+            href="#Education&Skills"
+            onClick={scrollToSkills}
+            className="animate-bounce mt-4"
+          >
+            <Arrow />
+          </a>
         </div>
       </main>
     </div>

@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "portfolio",
   },
-  plugins: ['gatsby-plugin-postcss',
+  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
