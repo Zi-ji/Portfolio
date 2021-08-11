@@ -8,7 +8,7 @@ const Home = () => {
     <div className="page-container">
       <Navbar />
       <main className="w-196 md:w-168 main-container">
-        <div className="flex sm:flex-col-reverse sm:items-center flex-row justify-between mt-24 sm:mt-6">
+        <div className="flex sm:flex-col-reverse sm:items-center flex-row justify-between mt-24 xl:mt-16 sm:mt-6">
           <p className="text-5xl text-primary font-bold leading-normal">
             HELLO{' '}👋,<br />
             I'M <span className="sm:text-5xl text-6xl text-secondary">ZHIJIE ZHU</span>
@@ -34,9 +34,9 @@ const Home = () => {
               Feel free to <a className="text-secondary">contact</a>{' '}him as well at any time.
             </p>
           </div>
-          <div className="sm:hidden flex flex-col justify-center items-center mb-4">
-            <p className="text-lg text-primary font-semibold align-top">Scroll Down 🖱</p>
-            <div className="animate-bounce mt-4"><Arrow /></div>
+          <div className="sm:hidden flex flex-col justify-center items-center">
+            <p className="xl:hidden text-lg text-primary font-semibold align-top">Scroll Down 🖱</p>
+            <div className="animate-bounce mt-2"><Arrow /></div>
           </div>
         </div>
       </main>

@@ -5,10 +5,10 @@ import Arrow from '../images/arrow.inline.svg'
 const Project = () => {
   return (
     <div className="page-container">
-      <main className="w-240 lg:w-196 md:w-144 pt-12 sm:pt-8 sm:pb-0 main-container">
+      <main className="w-240 lg:w-196 md:w-144 pt-8 sm:pt-8 sm:pb-0 main-container">
         <div className="w-full flex flex-col sm:items-center">
           <p className="text-3xl font-bold text-primary">PROJECTS{' '}💻</p>
-          <p className="text-xl font-semibold text-primary mt-4 sm:text-center sm:pl-4 sm:pr-4">
+          <p className="text-xl font-semibold text-primary mt-4 mb-4 sm:text-center sm:pl-4 sm:pr-4">
             Check out a few projects I've been involved in.
           </p>
         </div>
