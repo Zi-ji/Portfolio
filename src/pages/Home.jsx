@@ -3,10 +3,14 @@ import Navbar from '../components/Navbar'
 import Avatar from '../images/Avatar.png'
 import Arrow from '../images/arrow.inline.svg'
 
-const Home = () => {
+const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
   return (
     <div className="page-container">
-      <Navbar />
+      <Navbar
+        scrollToSkills={scrollToSkills}
+        scrollToProject={scrollToProject}
+        scrollToContact={scrollToContact}
+      />
       <main className="w-196 md:w-168 main-container">
         <div className="flex sm:flex-col-reverse sm:items-center flex-row justify-between mt-24 xl:mt-16 sm:mt-6">
           <p className="text-5xl text-primary font-bold leading-normal">
@@ -15,7 +19,7 @@ const Home = () => {
           </p>
           <img className="w-36 h-44" src={Avatar} alt="Avatar" />
         </div>
-        <p className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12">
+        <p className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
           I learn how to code.
         </p>
         <div className="flex-grow flex flex-col justify-between sm:justify-center">

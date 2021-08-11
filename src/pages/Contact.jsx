@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({ refProp }) => {
   return (
-    <div className="page-container">
+    <div ref={refProp} className="page-container">
       <main className="w-144 main-container justify-center items-stretch">
         <div className="flex flex-col justify-center sm:items-center">
           <p className="text-3xl text-primary font-bold">Contact me ☎</p>
