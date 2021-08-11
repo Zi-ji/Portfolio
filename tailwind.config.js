@@ -17,6 +17,7 @@ module.exports = {
       background2: '#F5F2E0'
     },
     screens: {
+      '3xl': {'max': '1800px'},
       '2xl': {'max': '1535px'},
       'xl': {'max': '1281px'},
       'lg': {'max': '1023px'},

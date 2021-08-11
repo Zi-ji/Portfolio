@@ -7,7 +7,7 @@ const Skills = ({ refProp, scrollToContact }) => {
   return (
     <div ref={refProp} className="page-container">
       <main className="w-240 min-h-full max-w-full flex-1 flex flex-row items-stretch sm:flex-col">
-        <div className="flex-1 flex flex-col pl-8 pr-8 pt-28 2xl:pt-8 xl:pt-4 sm:mb-20 sm:mt-12">
+        <div className="flex-1 flex flex-col pl-8 pr-8 pt-28 3xl:pt-16 2xl:pt-8 xl:pt-4 sm:mb-20 sm:mt-12">
           <div className="sm:flex sm:flex-col sm:items-center">
             <p className="text-3xl text-primary font-bold">Education 📒</p>
             <p className="text-lg text-primary font-medium">Relavant courses I've completed</p>
@@ -35,7 +35,7 @@ const Skills = ({ refProp, scrollToContact }) => {
           />
         </div>
         <div className="sm:hidden h-96 border-r-4 self-center border-primary" /> 
-        <div className="flex-1 flex flex-col pl-12 pr-8 pt-28 2xl:pt-8 xl:pt-4">
+        <div className="flex-1 flex flex-col pl-12 pr-8 pt-28 3xl:pt-16 2xl:pt-8 xl:pt-4">
           <div>
             <p className="text-3xl text-primary font-bold">Skills ⛏</p>
             <p className="text-lg text-primary font-medium">Tools and Technologies I've used</p>
