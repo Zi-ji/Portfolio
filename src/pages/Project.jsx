@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import Arrow from '../images/arrow.inline.svg'
 
-const Project = ({ refProp }) => {
+const Project = ({ refProp, scrollToSkills }) => {
   return (
     <div ref={refProp} className="page-container">
       <main className="w-240 lg:w-196 md:w-144 pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
@@ -19,6 +19,7 @@ const Project = ({ refProp }) => {
             description="A collaborative platform for teams to communicate the state of their tasks,
             for users to connect with their collaborators through a user-friendly interface."
             technologies={['ReactJS', 'TypeScript', 'Firebase', 'Material-UI']}
+            link1="https://github.com/COMP3900-9900-Capstone-Project"
           />
           <ProjectCard
             title="Footsteps"
@@ -28,6 +29,8 @@ const Project = ({ refProp }) => {
             technologies={['React Native']}
             source="https://github.com/Zi-ji/footsteps"
             demo="https://www.youtube.com/watch?v=cRgM0WEVUEQ&list=PLtdbwEd-4QWHZTWOyB2W73nn9hwAoLj6c"
+            link1="https://github.com/Zi-ji/footsteps"
+            link2="https://www.youtube.com/watch?v=-Ruo8NlrkCo&list=PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index=2&ab_channel=CSESoc"
           />
           <ProjectCard
             title="*this"
@@ -35,10 +38,11 @@ const Project = ({ refProp }) => {
             description="The current website. Built with GatsbyJS and Tailwind CSS. Hope you like it. :)"
             technologies={['GatsbyJS', 'Tailwind-CSS']}
             source="https://github.com/Zi-ji/Portfolio"
+            link1="https://github.com/Zi-ji/Portfolio"
           />
         </div>
         <div className="sm:hidden flex flex-col justify-center items-center mb-4">
-          <div className="animate-bounce mt-4"><Arrow /></div>
+          <a href="#Education&Skills" onClick={scrollToSkills} className="animate-bounce mt-4"><Arrow /></a>
         </div>
       </main>
     </div>

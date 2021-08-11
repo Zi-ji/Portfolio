@@ -24,8 +24,14 @@ const IndexPage = () => {
           scrollToProject={scrollToProject}
           scrollToContact={scrollToContact}
         />
-        <Project refProp={projectRef} />
-        <Skills refProp={skillsRef} />
+        <Project
+          refProp={projectRef}
+          scrollToSkills={scrollToSkills}
+        />
+        <Skills
+          refProp={skillsRef}
+          scrollToContact={scrollToContact}
+        />
         <Contact refProp={contactRef} />
       </body>
     </>

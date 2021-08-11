@@ -9,7 +9,7 @@ const Skillboard = ({ title, items }) => {
         return (
           <div className="flex flex-row mt-2">
             {GetIcons(item)}
-            <p className="font-semibold text-secondary ml-2">{item}</p>
+            <p className="font-semibold text-primary ml-2">{item}</p>
           </div>
         )
       })}
