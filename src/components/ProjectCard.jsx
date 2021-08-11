@@ -10,7 +10,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
     <div className="project-card card-style">
       <div className="h-full flex-1 flex flex-col justify-around pt-2 pb-2 sm:pt-3 sm:pr-3">
         <div>
-          <a href={link1} className="text-2xl text-secondary font-bold">{title}</a>
+          <a href={link1} className="text-2xl text-secondary font-bold duration-500 hover:text-light">{title}</a>
           <p className="text-base text-primary italic font-bold sm:text-sm">
             {notes.title}
             {notes.award && <a href={link2} className="text-secondary">{'  '}{notes.award}</a>}

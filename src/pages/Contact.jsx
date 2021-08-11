@@ -9,13 +9,23 @@ const Contact = ({ refProp }) => {
           <div className="h-48 border-l-4 border-primary sm:border-transparent ml-8 sm:ml-0 pl-8 sm:pl-4 mt-12 flex flex-col justify-between">
             <p className="text-lg text-primary font-medium">🏠 Based in Sydney</p>
             <p className="text-lg text-primary font-medium">
-              📧 Email <a className="text-secondary">zhuzhijie1003@outlook.com</a>
+              📧 Email{' '}
+              <a
+                href="mailto:zhuzhijie1003@outlook.com"
+                className="text-secondary duration-500 hover:text-light"
+                data-tip="hello world"
+              >
+                zhuzhijie1003@outlook.com
+              </a>
             </p>
             <p className="text-lg text-primary font-medium">
-              📞 Phone <a className="text-secondary">+61 0451254606</a>
+              📞 Phone{' '}
+              <span className="text-secondary duration-500 hover:text-light select-all">
+                +61 0451254606
+              </span>
             </p>
-            <p className="text-lg font-medium">
-              📰 <a className="text-secondary">My Resume</a>
+            <p className="text-lg font-medium text-primary">
+              📰 <a href={'Zhijie_Zhu_Resume.pdf'} download className="text-secondary duration-500 hover:text-light">Download</a>{' '}my Resume
             </p>
           </div>
         </div>

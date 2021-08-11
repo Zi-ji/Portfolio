@@ -24,7 +24,7 @@ const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
         <p className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
           <TextLoop interval={2000}>
             <span>I learn how to code. 💻</span>
-            <span>I love discovering. 🙍‍♂️</span>
+            <span>I love discovering. 🧑</span>
             <span>I'm ready for the future. 🔜</span>
           </TextLoop>
         </p>
@@ -35,17 +35,17 @@ const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
               ABOUT ME{' '}🙋‍♂️
             </p>
             <p className="sm:text-base mt-4 text-xl text-primary font-semibold leading-normal sm:ml-8 sm:mr-8">
-              <span className="text-secondary">Zhijie Zhu</span>{' '}is currently a 3rd year student studying{' '}
+              Zhijie Zhu is currently a 3rd year student studying{' '}
               <a href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"
-                className="text-secondary"
+                className="text-secondary duration-500 hover:text-light"
               >
                 Bachelor of Computer Science and Commerce
-              </a>{' '}at{' '}<a href="https://www.unsw.edu.au/" className="text-secondary">UNSW</a>.
+              </a>{' '}at{' '}<a href="https://www.unsw.edu.au/" className="text-secondary duration-500 hover:text-light">UNSW</a>.
               You can also call him Richard. He
               enjoys thinking, learning new things and making cool stuffs. He is recently
-              learning <a href="https://www.javascript.com/" className="text-secondary">JavaScript</a>.<br/><br/>
+              learning <a href="https://www.javascript.com/" className="text-secondary duration-500 hover:text-light">JavaScript</a>.<br/><br/>
               He is currently based in Sydney. You can learn more about his projects, education and skills here.
-              Feel free to{' '}<a href="#Contact" onClick={scrollToContact} className="text-secondary">contact</a>{' '}him as well at any time.
+              Feel free to{' '}<a href="#Contact" onClick={scrollToContact} className="text-secondary duration-500 hover:text-light">contact</a>{' '}him as well at any time.
             </p>
           </div>
           <div className="sm:hidden flex flex-col justify-center items-center">
