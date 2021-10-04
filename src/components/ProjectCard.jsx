@@ -13,7 +13,7 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
           <a href={link1} className="text-2xl text-secondary font-bold duration-500 hover:text-light">{title}</a>
           <p className="text-base text-primary italic font-bold sm:text-sm">
             {notes.title}
-            {notes.award && <a href={link2} className="text-secondary">{'  '}{notes.award}</a>}
+            {notes.award && <a href={link2} className="text-secondary hover:text-light">{'  '}{notes.award}</a>}
           </p>
         </div>
         <p className="text-primary font-medium sm:text-sm">
@@ -41,17 +41,25 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
           <div className="flex-1 flex flex-col justify-around">
             {source &&
               <div className="flex flex-row items-center">
-                <p className="text-base text-primary font-bold sm:text-s pr-2">
+                <a
+                  href={source}
+                  aria-label="Github source page"
+                  className="text-base text-primary font-bold sm:text-s pr-2 text-secondary hover:text-light"
+                >
                   Source Code
-                </p>
+                </a>
                 <a aria-label="Github source page" href={source}><GithubIcon /></a>
               </div>
             }
             {demo &&
               <div className="flex flex-row items-center">
-                <p className="text-base text-primary font-bold sm:text-s pr-2">
+                <a
+                  href={demo}
+                  aria-label="Demo video on youtube"
+                  className="text-base text-primary font-bold sm:text-s pr-2 text-secondary hover:text-light"
+                >
                   Demo
-                </p>
+                </a>
                 <a aria-label="Demo video on youtube" href={demo}><YtbIcon /></a>
               </div>
             }

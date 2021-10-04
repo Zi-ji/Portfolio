@@ -28,7 +28,7 @@ const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
             <span>I'm ready for the future. 🔜</span>
           </TextLoop>
         </div>
-        <div className="flex-grow flex flex-col justify-between sm:justify-center">
+        <div className="flex-grow flex flex-col justify-evenly sm:justify-center">
           <div className="mt-8" />
           <div>
             <p className="sm:text-2xl text-3xl sm:text-center text-primary font-bold leading-normal">
