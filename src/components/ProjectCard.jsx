@@ -1,24 +1,40 @@
-import React from 'react'
-import GithubIcon from '../images/github.inline.svg'
-import YtbIcon from '../images/youtube.inline.svg'
+import React from 'react';
+import GithubIcon from '../images/github.inline.svg';
+import YtbIcon from '../images/youtube.inline.svg';
 
-import GetIcons from './GetIcons'
+import GetIcons from './GetIcons';
 
-const ProjectCard = ({ title, notes, description, technologies, source, demo, link1, link2 }) => {
-
+const ProjectCard = ({
+  title,
+  notes,
+  description,
+  technologies,
+  source,
+  demo,
+  link1,
+  link2
+}) => {
   return (
     <div className="project-card card-style">
       <div className="h-full flex-1 flex flex-col justify-around pt-2 pb-2 sm:pt-3 sm:pr-3">
         <div>
-          <a href={link1} className="text-2xl text-secondary font-bold duration-500 hover:text-light">{title}</a>
+          <a
+            href={link1}
+            className="text-2xl text-secondary font-bold duration-500 hover:text-light"
+          >
+            {title}
+          </a>
           <p className="text-base text-primary italic font-bold sm:text-sm">
             {notes.title}
-            {notes.award && <a href={link2} className="text-secondary hover:text-light">{'  '}{notes.award}</a>}
+            {notes.award && (
+              <a href={link2} className="text-secondary hover:text-light">
+                {'  '}
+                {notes.award}
+              </a>
+            )}
           </p>
         </div>
-        <p className="text-primary font-medium sm:text-sm">
-          {description}
-        </p>
+        <p className="text-primary font-medium sm:text-sm">{description}</p>
       </div>
       <div className="md:hidden h-32 ml-20 border-r-4 border-primary mt-4 mb-4" />
       <div className="h-full flex-1 flex flex-col md:hidden pl-12 pt-4 pb-4">
@@ -26,20 +42,19 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
           <p className="text-base text-primary font-bold sm:text-s">
             Technologies
           </p>
-          {technologies && 
+          {technologies &&
             technologies.map((item, idx) => {
               return (
                 <div key={idx} className="flex flex-row">
                   {GetIcons(item)}
                   <p className="font-semibold text-primary ml-2">{item}</p>
                 </div>
-              )
-            })
-          }
+              );
+            })}
         </div>
-        {(source || demo) &&
+        {(source || demo) && (
           <div className="flex-1 flex flex-col justify-around">
-            {source &&
+            {source && (
               <div className="flex flex-row items-center">
                 <a
                   href={source}
@@ -48,10 +63,12 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
                 >
                   Source Code
                 </a>
-                <a aria-label="Github source page" href={source}><GithubIcon /></a>
+                <a aria-label="Github source page" href={source}>
+                  <GithubIcon />
+                </a>
               </div>
-            }
-            {demo &&
+            )}
+            {demo && (
               <div className="flex flex-row items-center">
                 <a
                   href={demo}
@@ -60,14 +77,16 @@ const ProjectCard = ({ title, notes, description, technologies, source, demo, li
                 >
                   Demo
                 </a>
-                <a aria-label="Demo video on youtube" href={demo}><YtbIcon /></a>
+                <a aria-label="Demo video on youtube" href={demo}>
+                  <YtbIcon />
+                </a>
               </div>
-            }
+            )}
           </div>
-        }
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

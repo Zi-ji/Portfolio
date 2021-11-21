@@ -1,14 +1,14 @@
-import React from 'react'
-import ProjectCard from '../components/ProjectCard'
-import Arrow from '../images/arrow.inline.svg'
+import React from 'react';
+import ProjectCard from '../components/ProjectCard';
+import Arrow from '../images/arrow.inline.svg';
 
 const Project = ({ refProp, scrollToSkills }) => {
   return (
     <div ref={refProp} className="page-container">
       <main className="w-240 lg:w-196 md:w-144 pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
         <div className="flex-1 flex flex-col justify-center">
-          <div className="w-full flex flex-col sm:items-center mb-10">
-            <p className="text-3xl font-bold text-primary">PROJECTS{' '}💻</p>
+          <div className="w-full flex flex-col sm:items-center">
+            <p className="text-3xl font-bold text-primary">PROJECTS 💻</p>
             <p className="text-xl font-semibold text-primary mt-4 mb-4 sm:text-center sm:pl-4 sm:pr-4">
               Check out a few projects I've been involved in.
             </p>
@@ -23,7 +23,10 @@ const Project = ({ refProp, scrollToSkills }) => {
           />
           <ProjectCard
             title="Footsteps"
-            notes={{ title: 'UNSW CSESoc Flagship Hackathon', award: 'Prospa Beginner Prize' }}
+            notes={{
+              title: 'UNSW CSESoc Flagship Hackathon',
+              award: 'Prospa Beginner Prize'
+            }}
             description="Aims to link a student’s schooling experience with relevant industry
             mentors who will guide them through their studies and decision on future career choices. (MVP)"
             technologies={['React Native']}
@@ -53,7 +56,7 @@ const Project = ({ refProp, scrollToSkills }) => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

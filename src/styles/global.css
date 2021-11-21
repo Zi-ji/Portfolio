@@ -8,54 +8,51 @@ html {
 
 @layer components {
   .page-container {
-    @apply min-h-screen w-full flex flex-col items-center
+    @apply min-h-screen w-full flex flex-col items-center;
   }
   .main-container {
-    @apply max-w-full flex-1 flex flex-col items-stretch
+    @apply max-w-full flex-1 flex flex-col items-stretch;
   }
   .card-style {
-    @apply
-    group
+    @apply group
     duration-500
+    rounded-r-lg
+    border-l-4
+    border-transparent
     sm:shadow-lg
     sm:bg-background2
     sm:border-primary
-    border-l-4
-    rounded-r-lg
-    border-transparent
     hover:border-primary
     hover:shadow-lg
-    hover:bg-background2
+    hover:bg-background2;
   }
   .project-card {
-    @apply
-    h-52
-    sm:h-44
-    xl:h-48
+    @apply h-52
     max-w-full
     ml-12
     mr-12
-    pl-12
     mb-6
+    pl-12
+    flex
+    flex-row
+    items-center
+    xl:h-48
+    sm:h-44
     sm:ml-8
     sm:mr-8
     sm:mt-4
     sm:pl-6
-    sm:mb-2
-    flex
-    flex-row
-    items-center
+    sm:mb-2;
   }
   .navlink {
-    @apply
-      transition
+    @apply ml-4
+      text-xl
+      text-primary
+      font-semibold
       border-b-4
       border-transparent
+      transition
       duration-500
-      ml-4
-      text-primary
-      text-xl
-      font-semibold
       cursor-pointer
       hover:text-secondary
       hover:border-secondary;

@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "portfolio",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'portfolio'
   },
-  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-postcss',
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -12,5 +14,5 @@ module.exports = {
         }
       }
     }
-  ],
+  ]
 };

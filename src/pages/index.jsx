@@ -1,18 +1,18 @@
-import React from 'react'
-import { Helmet } from "react-helmet"
-import Home from './Home'
-import Project from './Project'
-import Skills from './Skills'
-import Contact from './Contact'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Home from './Home';
+import Project from './Project';
+import Skills from './Skills';
+import Contact from './Contact';
 
 const IndexPage = () => {
-  const projectRef = React.useRef(null)
-  const skillsRef = React.useRef(null)
-  const contactRef = React.useRef(null)
+  const projectRef = React.useRef(null);
+  const skillsRef = React.useRef(null);
+  const contactRef = React.useRef(null);
 
-  const scrollToProject = () => projectRef.current.scrollIntoView()
-  const scrollToSkills = () => skillsRef.current.scrollIntoView()
-  const scrollToContact = () => contactRef.current.scrollIntoView()
+  const scrollToProject = () => projectRef.current.scrollIntoView();
+  const scrollToSkills = () => skillsRef.current.scrollIntoView();
+  const scrollToContact = () => contactRef.current.scrollIntoView();
 
   return (
     <>
@@ -27,18 +27,12 @@ const IndexPage = () => {
           scrollToProject={scrollToProject}
           scrollToContact={scrollToContact}
         />
-        <Project
-          refProp={projectRef}
-          scrollToSkills={scrollToSkills}
-        />
-        <Skills
-          refProp={skillsRef}
-          scrollToContact={scrollToContact}
-        />
+        <Project refProp={projectRef} scrollToSkills={scrollToSkills} />
+        <Skills refProp={skillsRef} scrollToContact={scrollToContact} />
         <Contact refProp={contactRef} />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

@@ -1,5 +1,5 @@
-import React from 'react'
-import GetIcons from './GetIcons'
+import React from 'react';
+import GetIcons from './GetIcons';
 
 const Skillboard = ({ title, items }) => {
   return (
@@ -11,10 +11,10 @@ const Skillboard = ({ title, items }) => {
             {GetIcons(item)}
             <p className="font-semibold text-primary ml-2">{item}</p>
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Skillboard
+export default Skillboard;
