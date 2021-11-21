@@ -1,7 +1,7 @@
 import React from 'react';
 import GetIcons from './GetIcons';
 
-const Skillboard = ({ title, items }) => {
+export default function Skillboard({ title, items }) {
   return (
     <div className="ml-8 mt-8 flex flex-col">
       <p className="text-lg text-primary font-bold">{title}</p>
@@ -15,6 +15,4 @@ const Skillboard = ({ title, items }) => {
       })}
     </div>
   );
-};
-
-export default Skillboard;
+}

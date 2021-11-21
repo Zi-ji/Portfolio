@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import Arrow from '../images/arrow.inline.svg';
 
-const Project = ({ refProp, scrollToSkills }) => {
+export default function Project({ refProp, scrollToSkills }) {
   return (
     <div ref={refProp} className="page-container">
       <main className="w-240 lg:w-196 md:w-144 pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
@@ -57,6 +57,4 @@ const Project = ({ refProp, scrollToSkills }) => {
       </main>
     </div>
   );
-};
-
-export default Project;
+}

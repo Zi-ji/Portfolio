@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Course = ({ code, name, description, mark, link }) => {
+export default function Course({ code, name, description, mark, link }) {
   return (
     <div className="h-44 max-w-full mt-8 pl-8 flex flex-col justify-around card-style">
       <div>
@@ -18,6 +18,4 @@ const Course = ({ code, name, description, mark, link }) => {
       <p className="text-primary font-bold sm:text-sm">{mark}</p>
     </div>
   );
-};
-
-export default Course;
+}

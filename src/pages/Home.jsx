@@ -4,7 +4,11 @@ import Navbar from '../components/Navbar';
 import Avatar from '../images/Avatar.png';
 import Arrow from '../images/arrow.inline.svg';
 
-const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
+export default function Home({
+  scrollToSkills,
+  scrollToProject,
+  scrollToContact
+}) {
   return (
     <div className="page-container">
       <Navbar
@@ -91,6 +95,4 @@ const Home = ({ scrollToSkills, scrollToProject, scrollToContact }) => {
       </main>
     </div>
   );
-};
-
-export default Home;
+}

@@ -4,7 +4,7 @@ import YtbIcon from '../images/youtube.inline.svg';
 
 import GetIcons from './GetIcons';
 
-const ProjectCard = ({
+export default function ProjectCard({
   title,
   notes,
   description,
@@ -13,7 +13,7 @@ const ProjectCard = ({
   demo,
   link1,
   link2
-}) => {
+}) {
   return (
     <div className="project-card card-style">
       <div className="h-full flex-1 flex flex-col justify-around pt-2 pb-2 sm:pt-3 sm:pr-3">
@@ -87,6 +87,4 @@ const ProjectCard = ({
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}

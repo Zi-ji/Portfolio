@@ -3,7 +3,7 @@ import Course from '../components/Course';
 import Skillboard from '../components/Skillboard';
 import Arrow from '../images/arrow.inline.svg';
 
-const Skills = ({ refProp, scrollToContact }) => {
+export default function Skills({ refProp, scrollToContact }) {
   return (
     <div ref={refProp} className="page-container">
       <main className="w-240 min-h-full max-w-full flex-1 flex flex-col justify-center items-stretch sm:flex-col">
@@ -85,6 +85,4 @@ const Skills = ({ refProp, scrollToContact }) => {
       </main>
     </div>
   );
-};
-
-export default Skills;
+}

@@ -5,7 +5,7 @@ import Project from './Project';
 import Skills from './Skills';
 import Contact from './Contact';
 
-const IndexPage = () => {
+export default function App() {
   const projectRef = React.useRef(null);
   const skillsRef = React.useRef(null);
   const contactRef = React.useRef(null);
@@ -33,6 +33,4 @@ const IndexPage = () => {
       </div>
     </>
   );
-};
-
-export default IndexPage;
+}
