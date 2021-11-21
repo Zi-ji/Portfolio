@@ -38,21 +38,21 @@ export default function Home({
         <div className="flex-grow flex flex-col justify-evenly sm:justify-center">
           <div className="mt-8" />
           <div>
-            <p className="sm:text-2xl text-3xl sm:text-center text-primary font-bold leading-normal">
+            <p className="sm:text-2xl text-3xl sm:text-center font-bold leading-normal">
               ABOUT ME 🙋‍♂️
             </p>
-            <p className="sm:text-base mt-4 text-xl text-primary font-semibold leading-normal sm:ml-8 sm:mr-8">
+            <p className="sm:text-base mt-4 section-subtitle leading-normal sm:ml-8 sm:mr-8">
               Zhijie Zhu is currently a 3rd year student studying{' '}
               <a
                 href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"
-                className="text-secondary duration-500 hover:text-light"
+                className="link-text"
               >
                 Bachelor of Computer Science and Commerce
               </a>{' '}
               at{' '}
               <a
                 href="https://www.unsw.edu.au/"
-                className="text-secondary duration-500 hover:text-light"
+                className="link-text"
               >
                 UNSW
               </a>
@@ -60,7 +60,7 @@ export default function Home({
               things and making cool stuffs. He is recently learning{' '}
               <a
                 href="https://www.javascript.com/"
-                className="text-secondary duration-500 hover:text-light"
+                className="link-text"
               >
                 JavaScript
               </a>
@@ -71,7 +71,7 @@ export default function Home({
               <a
                 href="#Contact"
                 onClick={scrollToContact}
-                className="text-secondary duration-500 hover:text-light"
+                className="link-text"
               >
                 contact
               </a>{' '}
@@ -79,7 +79,7 @@ export default function Home({
             </p>
           </div>
           <div className="sm:hidden flex flex-col justify-center items-center">
-            <p className="xl:hidden text-lg text-primary font-semibold align-top">
+            <p className="xl:hidden text-lg font-semibold align-top">
               Scroll Down 🖱
             </p>
             <a

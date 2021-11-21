@@ -8,8 +8,8 @@ export default function Project({ refProp, scrollToSkills }) {
       <main className="w-240 lg:w-196 md:w-144 pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
         <div className="flex-1 flex flex-col justify-center">
           <div className="w-full flex flex-col sm:items-center">
-            <p className="text-3xl font-bold text-primary">PROJECTS 💻</p>
-            <p className="text-xl font-semibold text-primary mt-4 mb-4 sm:text-center sm:pl-4 sm:pr-4">
+            <p className="section-title">PROJECTS 💻</p>
+            <p className="section-subtitle mt-4 mb-4 sm:text-center sm:pl-4 sm:pr-4">
               Check out a few projects I've been involved in.
             </p>
           </div>
