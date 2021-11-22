@@ -10,38 +10,37 @@ export default function Home({
   scrollToContact
 }) {
   return (
-    <div className="page-container">
+    <div className="page-container justify-between">
       <Navbar
         scrollToSkills={scrollToSkills}
         scrollToProject={scrollToProject}
         scrollToContact={scrollToContact}
       />
-      <main className="w-196 md:w-168 main-container">
-        <div className="flex sm:flex-col-reverse sm:items-center flex-row justify-between mt-24 xl:mt-16 sm:mt-6">
-          <p className="text-5xl text-primary font-bold leading-normal">
-            HELLO 👋,
-            <br />
-            I'M{' '}
-            <span className="sm:text-5xl text-6xl text-secondary">
-              ZHIJIE ZHU
-            </span>
-          </p>
-          <img className="w-36 h-44" src={Avatar} alt="Avatar" />
+      <main className="w-full flex flex-row">
+        <div className='flex-1 flex flex-col items-end pr-12'>
+          <div className="flex sm:items-center flex-col text-right">
+            {/* <img className="w-36 h-44" src={Avatar} alt="Avatar" /> */}
+            <p className="sm:text-6xl text-7xl text-primary font-bold leading-normal title">
+              ZHIJIE
+            </p>
+            <p className="sm:text-5xl text-7xl text-primary font-bold leading-normal title">
+              ZHU
+            </p>
+          </div>
+          <div className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
+            {/* <TextLoop interval={2000}>
+              <span>I learn how to code. 💻</span>
+              <span>I love discovering. 🧑</span>
+              <span>I'm ready for the future. 🔜</span>
+            </TextLoop> */}
+          </div>
         </div>
-        <div className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
-          <TextLoop interval={2000}>
-            <span>I learn how to code. 💻</span>
-            <span>I love discovering. 🧑</span>
-            <span>I'm ready for the future. 🔜</span>
-          </TextLoop>
-        </div>
-        <div className="flex-grow flex flex-col justify-evenly sm:justify-center">
-          <div className="mt-8" />
-          <div>
-            <p className="sm:text-2xl text-3xl sm:text-center font-bold leading-normal">
+        <div className="flex-1 flex flex-col justify-evenly sm:justify-center border-l-4 border-secondary pl-12">
+          <div className='w-96'>
+            <p className="text-2xl sm:text-center font-bold leading-normal">
               ABOUT ME 🙋‍♂️
             </p>
-            <p className="sm:text-base mt-4 section-subtitle leading-normal sm:ml-8 sm:mr-8">
+            <p className="sm:text-base mt-4 text-lg text-primary font-medium leading-normal sm:ml-8 sm:mr-8">
               Zhijie Zhu is currently a 3rd year student studying{' '}
               <a
                 href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"
@@ -78,21 +77,9 @@ export default function Home({
               him as well at any time.
             </p>
           </div>
-          <div className="sm:hidden flex flex-col justify-center items-center">
-            <p className="xl:hidden text-lg font-semibold align-top">
-              Scroll Down 🖱
-            </p>
-            <a
-              aria-label="Go to projects page"
-              href="#Projects"
-              onClick={scrollToProject}
-              className="animate-bounce mt-2 mb-2"
-            >
-              <Arrow />
-            </a>
-          </div>
         </div>
       </main>
+      <div />
     </div>
   );
 }

@@ -11,7 +11,7 @@ module.exports = {
     colors: {
       primary: '#27476E',
       secondary: '#CE4B27',
-      light: '#626793',
+      light: '#0084B8',
       transparent: 'transparent',
       test: 'gray',
       background2: '#F5F2E0'
@@ -31,6 +31,9 @@ module.exports = {
         168: '42rem',
         196: '48rem',
         240: '60rem'
+      },
+      fontFamily: {
+        outfit: ['outfit', 'sans-serif']
       }
     }
   },

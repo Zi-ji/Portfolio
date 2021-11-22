@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
+}
+
+.title {
+  background: -webkit-linear-gradient(#ce4b27, #27476e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @tailwind base;
@@ -8,7 +16,7 @@ html {
 
 @layer components {
   p {
-    @apply text-primary;
+    @apply text-primary font-outfit;
   }
   .page-container {
     @apply min-h-screen w-full flex flex-col items-center;
