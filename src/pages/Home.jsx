@@ -10,7 +10,7 @@ export default function Home({
   scrollToContact
 }) {
   return (
-    <div className="page-container justify-between">
+    <div className="page-container min-h-screen justify-between">
       <Navbar
         scrollToSkills={scrollToSkills}
         scrollToProject={scrollToProject}
@@ -20,22 +20,15 @@ export default function Home({
         <div className='flex-1 flex flex-col items-end pr-12'>
           <div className="flex sm:items-center flex-col text-right">
             {/* <img className="w-36 h-44" src={Avatar} alt="Avatar" /> */}
-            <p className="sm:text-6xl text-7xl text-primary font-bold leading-normal title">
+            <p className="title">
               ZHIJIE
             </p>
-            <p className="sm:text-5xl text-7xl text-primary font-bold leading-normal title">
+            <p className="title">
               ZHU
             </p>
           </div>
-          <div className="sm:text-2xl text-4xl sm:text-center text-primary font-bold leading-normal sm:mt-2 mt-12 xl:mt-8">
-            {/* <TextLoop interval={2000}>
-              <span>I learn how to code. 💻</span>
-              <span>I love discovering. 🧑</span>
-              <span>I'm ready for the future. 🔜</span>
-            </TextLoop> */}
-          </div>
         </div>
-        <div className="flex-1 flex flex-col justify-evenly sm:justify-center border-l-4 border-secondary pl-12">
+        <div className="flex-1 border-l-4 border-secondary pl-12">
           <div className='w-96'>
             <p className="text-2xl sm:text-center font-bold leading-normal">
               ABOUT ME 🙋‍♂️

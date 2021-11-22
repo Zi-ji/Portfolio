@@ -4,7 +4,7 @@ import Arrow from '../images/arrow.inline.svg';
 
 export default function Project({ refProp, scrollToSkills }) {
   return (
-    <div ref={refProp} className="page-container">
+    <div ref={refProp} className="page-container bg-background2">
       <main className="w-240 lg:w-196 md:w-144 pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
         <div className="flex-1 flex flex-col justify-center">
           <div className="w-full flex flex-col sm:items-center">
@@ -43,16 +43,6 @@ export default function Project({ refProp, scrollToSkills }) {
             source="https://github.com/Zi-ji/Portfolio"
             link1="https://github.com/Zi-ji/Portfolio"
           />
-          <div className="sm:hidden flex flex-col justify-center items-center mb-4">
-            <a
-              aria-label="Go to education and skills page"
-              href="#Education&Skills"
-              onClick={scrollToSkills}
-              className="animate-bounce mt-4"
-            >
-              <Arrow />
-            </a>
-          </div>
         </div>
       </main>
     </div>
