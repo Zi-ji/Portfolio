@@ -1,11 +1,13 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import taskhouse from '../images/taskhouse.png';
+
 import Arrow from '../images/arrow.inline.svg';
 
 export default function Project({ refProp, scrollToSkills }) {
   return (
     <div ref={refProp} className="page-container bg-background2">
-      <main className="w-240 lg:w-196 md:w-144 pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
+      <main className="pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
         <div className="flex-1 flex flex-col justify-center">
           <div className="w-full flex flex-col sm:items-center">
             <p className="section-title">PROJECTS 💻</p>

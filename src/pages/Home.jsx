@@ -36,7 +36,7 @@ export default function Home({
             <p className="text-2xl text-center sm:text-left font-bold">
               ABOUT ME 🙋‍♂️
             </p>
-            <p className="text-base text-center sm:text-left sm:text-lg mt-4 font-medium">
+            <p className="text-lg text-center sm:text-left mt-4 font-medium">
               Zhijie Zhu is currently a 3rd year student studying{' '}
               <a
                 href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"
