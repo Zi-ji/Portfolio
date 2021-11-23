@@ -17,29 +17,26 @@ export default function Home({
         scrollToProject={scrollToProject}
         scrollToContact={scrollToContact}
       />
-      <main className="w-full flex flex-row">
-        <div className='flex-1 flex flex-col items-end pr-12'>
-          <div className="flex sm:items-center flex-col justify-end text-right">
-            {/* <img className="w-36 h-44" src={Avatar} alt="Avatar" /> */}
-            <p className="title">
-              ZHIJIE
-            </p>
-            <p className="title">
-              ZHU
-            </p>
-            <div className='flex flex-row justify-end'>
-              <a aria-label="Github source page" href="https://github.com/zijizhu">
-                <GithubIcon className="fill-blue hover:fill-red" />
-              </a>
-            </div>
+      <main className="w-full flex flex-col sm:flex-row sm:justify-end">
+        <div className="flex-1 flex items-center flex-col text-right sm:items-end sm: justify-center mb-6 sm:pr-12">
+          <p className="title">
+            ZHIJIE
+          </p>
+          <p className="title">
+            ZHU
+          </p>
+          <div className='flex flex-row justify-end mt-8'>
+            <a aria-label="Github source page" href="https://github.com/zijizhu">
+              <GithubIcon className="w-12 h-12 fill-current link-text" />
+            </a>
           </div>
         </div>
-        <div className="flex-1 border-l-4 border-primary pl-12">
-          <div className='w-96'>
-            <p className="text-2xl sm:text-center font-bold leading-normal">
+        <div className="flex-1 flex sm:border-l-4 sm:border-textColor justify-center sm:justify-start">
+          <div className='w-96 sm:w-128 sm:bg-background2 p-6 sm:p-10 sm:rounded-2xl sm:rounded-l-none sm:shadow-lg'>
+            <p className="text-2xl text-center sm:text-left font-bold">
               ABOUT ME 🙋‍♂️
             </p>
-            <p className="sm:text-base mt-4 text-xl text-textColor font-medium leading-normal sm:ml-8 sm:mr-8">
+            <p className="text-base text-center sm:text-left sm:text-lg mt-4 font-medium">
               Zhijie Zhu is currently a 3rd year student studying{' '}
               <a
                 href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"

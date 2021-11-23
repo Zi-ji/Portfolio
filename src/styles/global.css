@@ -19,7 +19,7 @@ html {
     @apply text-textColor font-outfit;
   }
   .title {
-    @apply sm:text-6xl text-7xl text-textColor font-bold leading-normal;
+    @apply text-6xl sm:text-7xl text-textColor font-bold leading-normal;
   }
   .page-container {
     @apply w-full flex flex-col items-center;
@@ -73,7 +73,7 @@ html {
   }
   .link-text {
     @apply text-primary
-    duration-500
+    duration-300
     hover:text-linkHover;
   }
   .section-title {

@@ -15,14 +15,6 @@ module.exports = {
       background2: '#F5F2E0',
       transparent: 'transparent'
     },
-    screens: {
-      '3xl': { max: '1800px' },
-      '2xl': { max: '1535px' },
-      xl: { max: '1281px' },
-      lg: { max: '1023px' },
-      md: { max: '767px' },
-      sm: { max: '639px' }
-    },
     extend: {
       spacing: {
         128: '32rem',
@@ -31,6 +23,7 @@ module.exports = {
         196: '48rem',
         240: '60rem'
       },
+      fill: ['hover'],
       fontFamily: {
         outfit: ['outfit', 'sans-serif']
       }
