@@ -2,7 +2,6 @@ import React from 'react';
 import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
 import taskhouse from '../images/taskhouse.png';
-import { StaticImage } from 'gatsby-plugin-image';
 import GetIcons from './GetIcons';
 
 export default function ProjectCard({
