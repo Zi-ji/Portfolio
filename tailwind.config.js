@@ -9,12 +9,11 @@ module.exports = {
       background: '#FAF9F0'
     }),
     colors: {
-      primary: '#27476E',
-      secondary: '#CE4B27',
-      light: '#0084B8',
-      transparent: 'transparent',
-      test: 'gray',
-      background2: '#F5F2E0'
+      primary: '#CE4B27',
+      textColor: '#27476E',
+      linkHover: '#0084B8',
+      background2: '#F5F2E0',
+      transparent: 'transparent'
     },
     screens: {
       '3xl': { max: '1800px' },

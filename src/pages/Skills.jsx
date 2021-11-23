@@ -39,7 +39,7 @@ export default function Skills({ refProp, scrollToContact }) {
               />
             </div>
           </div>
-          <div className="sm:hidden h-96 border-r-4 self-center border-primary" />
+          <div className="sm:hidden h-96 border-r-4 self-center border-textColor" />
           <div className="flex-1 flex flex-col pl-12 pr-8 pt-28 3xl:pt-16 2xl:pt-8 xl:pt-4 justify-center">
             <div className="h-196">
               <div>

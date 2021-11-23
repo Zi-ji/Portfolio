@@ -16,10 +16,10 @@ html {
 
 @layer components {
   p {
-    @apply text-primary font-outfit;
+    @apply text-textColor font-outfit;
   }
   .title {
-    @apply sm:text-6xl text-7xl text-primary font-bold leading-normal;
+    @apply sm:text-6xl text-7xl text-textColor font-bold leading-normal;
   }
   .page-container {
     @apply w-full flex flex-col items-center;
@@ -35,8 +35,8 @@ html {
     border-transparent
     sm:shadow-lg
     sm:bg-background2
-    sm:border-primary
-    hover:border-primary
+    sm:border-textColor
+    hover:border-textColor
     hover:shadow-lg
     hover:bg-background2;
   }
@@ -61,20 +61,20 @@ html {
   .navlink {
     @apply ml-4
       text-xl
-      text-primary
+      text-textColor
       font-semibold
       border-b-4
       border-transparent
       transition
       duration-500
       cursor-pointer
-      hover:text-secondary
-      hover:border-secondary;
+      hover:text-primary
+      hover:border-primary;
   }
   .link-text {
-    @apply text-secondary
+    @apply text-primary
     duration-500
-    hover:text-light;
+    hover:text-linkHover;
   }
   .section-title {
     @apply text-3xl

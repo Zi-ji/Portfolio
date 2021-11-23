@@ -6,7 +6,7 @@ export default function Contact({ refProp }) {
       <main className="w-144 main-container justify-center items-stretch">
         <div className="flex flex-col justify-center sm:items-center">
           <p className="section-title">Contact me ☎</p>
-          <div className="h-48 border-l-4 border-primary sm:border-transparent ml-8 sm:ml-0 pl-8 sm:pl-4 mt-12 flex flex-col justify-between">
+          <div className="h-48 border-l-4 border-textColor sm:border-transparent ml-8 sm:ml-0 pl-8 sm:pl-4 mt-12 flex flex-col justify-between">
             <p className="section-subtitle">
               🏠 Based in Sydney
             </p>
@@ -40,7 +40,7 @@ export default function Contact({ refProp }) {
           </div>
         </div>
       </main>
-      <div className="w-full h-12 border-b-8 border-secondary flex flex-row justify-center">
+      <div className="w-full h-12 border-b-8 border-primary flex flex-row justify-center">
         <p className="text-base font-medium">© 2021 Zhijie Zhu</p>
       </div>
     </div>

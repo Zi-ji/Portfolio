@@ -2,6 +2,7 @@ import React from 'react';
 import TextLoop from 'react-text-loop';
 import Navbar from '../components/Navbar';
 import Avatar from '../images/Avatar.png';
+import GithubIcon from '../images/github.inline.svg';
 import Arrow from '../images/arrow.inline.svg';
 
 export default function Home({
@@ -18,7 +19,7 @@ export default function Home({
       />
       <main className="w-full flex flex-row">
         <div className='flex-1 flex flex-col items-end pr-12'>
-          <div className="flex sm:items-center flex-col text-right">
+          <div className="flex sm:items-center flex-col justify-end text-right">
             {/* <img className="w-36 h-44" src={Avatar} alt="Avatar" /> */}
             <p className="title">
               ZHIJIE
@@ -26,14 +27,19 @@ export default function Home({
             <p className="title">
               ZHU
             </p>
+            <div className='flex flex-row justify-end'>
+              <a aria-label="Github source page" href="https://github.com/zijizhu">
+                <GithubIcon className="fill-blue hover:fill-red" />
+              </a>
+            </div>
           </div>
         </div>
-        <div className="flex-1 border-l-4 border-secondary pl-12">
+        <div className="flex-1 border-l-4 border-primary pl-12">
           <div className='w-96'>
             <p className="text-2xl sm:text-center font-bold leading-normal">
               ABOUT ME 🙋‍♂️
             </p>
-            <p className="sm:text-base mt-4 text-lg text-primary font-medium leading-normal sm:ml-8 sm:mr-8">
+            <p className="sm:text-base mt-4 text-xl text-textColor font-medium leading-normal sm:ml-8 sm:mr-8">
               Zhijie Zhu is currently a 3rd year student studying{' '}
               <a
                 href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"

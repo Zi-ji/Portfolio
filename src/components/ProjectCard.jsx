@@ -20,26 +20,26 @@ export default function ProjectCard({
         <div>
           <a
             href={link1}
-            className="text-2xl text-secondary font-bold duration-500 hover:text-light"
+            className="text-2xl text-primary font-bold duration-500 hover:text-linkHover"
           >
             {title}
           </a>
-          <p className="text-base text-primary italic font-bold sm:text-sm">
+          <p className="text-base text-textColor italic font-bold sm:text-sm">
             {notes.title}
             {notes.award && (
-              <a href={link2} className="text-secondary hover:text-light">
+              <a href={link2} className="text-primary hover:text-linkHover">
                 {'  '}
                 {notes.award}
               </a>
             )}
           </p>
         </div>
-        <p className="text-primary font-medium sm:text-sm">{description}</p>
+        <p className="text-textColor font-medium sm:text-sm">{description}</p>
       </div>
-      <div className="md:hidden h-32 ml-20 border-r-4 border-primary mt-4 mb-4" />
+      <div className="md:hidden h-32 ml-20 border-r-4 border-textColor mt-4 mb-4" />
       <div className="h-full flex-1 flex flex-col md:hidden pl-12 pt-4 pb-4">
         <div className="flex-1 flex flex-col justify-around">
-          <p className="text-base text-primary font-bold sm:text-s">
+          <p className="text-base text-textColor font-bold sm:text-s">
             Technologies
           </p>
           {technologies &&
@@ -47,7 +47,7 @@ export default function ProjectCard({
               return (
                 <div key={idx} className="flex flex-row">
                   {GetIcons(item)}
-                  <p className="font-semibold text-primary ml-2">{item}</p>
+                  <p className="font-semibold text-textColor ml-2">{item}</p>
                 </div>
               );
             })}
@@ -59,7 +59,7 @@ export default function ProjectCard({
                 <a
                   href={source}
                   aria-label="Github source page"
-                  className="text-base text-primary font-bold sm:text-s pr-2 text-secondary hover:text-light"
+                  className="text-base text-textColor font-bold sm:text-s pr-2 text-primary hover:text-linkHover"
                 >
                   Source Code
                 </a>
@@ -73,7 +73,7 @@ export default function ProjectCard({
                 <a
                   href={demo}
                   aria-label="Demo video on youtube"
-                  className="text-base text-primary font-bold sm:text-s pr-2 text-secondary hover:text-light"
+                  className="text-base text-textColor font-bold sm:text-s pr-2 text-primary hover:text-linkHover"
                 >
                   Demo
                 </a>
