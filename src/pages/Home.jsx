@@ -1,9 +1,15 @@
 import React from 'react';
-import TextLoop from 'react-text-loop';
 import Navbar from '../components/Navbar';
-import Avatar from '../images/Avatar.png';
 import GithubIcon from '../images/github.inline.svg';
-import Arrow from '../images/arrow.inline.svg';
+import CodeIcon from '../images/code.inline.svg'
+import DivideIcon from '../images/divide.inline.svg'
+import KiteIcon from '../images/kite.inline.svg'
+import PlusIcon from '../images/plus.inline.svg'
+import TriangleIcon from '../images/triangle.inline.svg'
+import HexagonIcon from '../images/hexagon.inline.svg'
+import PlusMinusIcon from '../images/plusMinus.inline.svg'
+import MoreEqualIcon from '../images/moreEqual.inline.svg'
+import SquareIcon from '../images/square.inline.svg'
 
 export default function Home({
   scrollToSkills,
@@ -11,19 +17,32 @@ export default function Home({
   scrollToContact
 }) {
   return (
-    <div className="page-container min-h-screen justify-between">
+    <div className="page-container relative min-h-screen justify-between">
+      
       <Navbar
         scrollToSkills={scrollToSkills}
         scrollToProject={scrollToProject}
         scrollToContact={scrollToContact}
       />
-      <main className="w-full flex flex-col sm:flex-row sm:justify-end">
-        <div className="flex-1 flex items-center flex-col text-right sm:items-end sm: justify-center mb-6 sm:pr-12">
+      
+      <CodeIcon className="svg-move w-20 h-20 top-1/6 left-1/6 text-textColor" />
+      <PlusIcon className="svg-still w-20 h-20 top-1/10 left-1/2 text-svgColor" />
+      <PlusMinusIcon className="svg-still absolute w-24 h-24 bottom-1/3 left-1/20 text-svgColor" />
+      <DivideIcon className="svg-still w-24 h-24 top-1/10 right-1/10 text-svgColor" />
+      <HexagonIcon className="svg-move-wide w-28 h-28 bottom-1/6 right-1/5 text-special" />
+      <KiteIcon className="svg-still w-20 h-20 bottom-1/10 left-1/3 text-svgColor" />
+      <SquareIcon className="svg-still w-20 h-20 right-1/20 bottom-1/3 text-svgColor" />
+      <MoreEqualIcon className="svg-move w-28 h-28 right-1/10 top-1/3 text-textColor" />
+      <TriangleIcon className="svg-move-wide w-28 h-28 left-1/5 bottom-1/2 text-linkHover" />
+      
+      <main className="w-full flex flex-col md:flex-row md:justify-end">
+        
+        <div className="flex-1 flex items-center flex-col text-right md:items-end md:pr-12">
           <p className="title">
-            ZHIJIE
+            Zh<span className='special'>iji</span>e
           </p>
           <p className="title">
-            ZHU
+            Zhu
           </p>
           <div className='flex flex-row justify-end mt-8'>
             <a aria-label="Github source page" href="https://github.com/zijizhu">
@@ -31,12 +50,13 @@ export default function Home({
             </a>
           </div>
         </div>
-        <div className="flex-1 flex sm:border-l-4 sm:border-textColor justify-center sm:justify-start">
-          <div className='w-96 sm:w-128 sm:bg-background2 p-6 sm:p-10 sm:rounded-2xl sm:rounded-l-none sm:shadow-lg'>
-            <p className="text-2xl text-center sm:text-left font-bold">
+        
+        <div className="flex-1 flex md:border-l-4 md:border-textColor justify-center md:justify-start">
+          <div className='w-96 md:w-128 p-6 md:p-10'>
+            <p className="text-2xl text-center md:text-left font-bold">
               ABOUT ME 🙋‍♂️
             </p>
-            <p className="text-lg text-center sm:text-left mt-4 font-medium">
+            <p className="text-lg text-center md:text-left mt-4 font-normal">
               Zhijie Zhu is currently a 3rd year student studying{' '}
               <a
                 href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"
@@ -74,6 +94,7 @@ export default function Home({
             </p>
           </div>
         </div>
+
       </main>
       <div />
     </div>

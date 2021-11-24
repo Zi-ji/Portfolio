@@ -6,14 +6,26 @@ module.exports = {
   theme: {
     backgroundColor: (theme) => ({
       ...theme('colors'),
-      background: '#FAF9F0'
+      background: '#edf2f4'
     }),
     colors: {
-      primary: '#CE4B27',
-      textColor: '#27476E',
+      primary: '#ef233c',
+      textColor: '#2b2d42',
       linkHover: '#0084B8',
-      background2: '#F5F2E0',
+      background2: '#F3F4F7',
+      svgColor: '#A9B0C6',
+      special: '#81b29a',
       transparent: 'transparent'
+    },
+    inset: {
+      '1/10': '10%',
+      '1/20': '5%',
+      '1/50': '2.5%',
+      '1/5': '20%',
+      '1/6': '15%',
+      '1/4': '25%',
+      '1/3': '33%',
+      '1/2': '50%'
     },
     extend: {
       spacing: {
@@ -26,6 +38,20 @@ module.exports = {
       fill: ['hover'],
       fontFamily: {
         outfit: ['outfit', 'sans-serif']
+      },
+      animation: {
+        movingWide: 'movingWide 20s ease-in-out infinite',
+        moving: 'moving 12s ease-in-out infinite'
+      },
+      keyframes: {
+        movingWide: {
+          '0%, 100%': { transform: 'translate3d(0,0,0)' },
+          '50%': { transform: 'translate3d(0,80px,0)' },
+        },
+        moving: {
+          '0%, 100%': { transform: 'translate3d(0,0,0)' },
+          '50%': { transform: 'translate3d(0,30px,0)' },
+        },
       }
     }
   },

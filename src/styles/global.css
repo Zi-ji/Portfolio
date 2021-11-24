@@ -4,10 +4,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.title {
-  background: -webkit-linear-gradient(#ce4b27, #27476e);
-  -webkit-background-clip: text;
+.special {
+  background: linear-gradient(#ef233c 35%, #2b2d42 35%);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.non-select {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 @tailwind base;
@@ -16,10 +22,19 @@ html {
 
 @layer components {
   p {
-    @apply text-textColor font-outfit;
+    @apply text-textColor font-outfit tracking-wide leading-10;
   }
   .title {
-    @apply text-6xl sm:text-7xl text-textColor font-bold leading-normal;
+    @apply text-6xl sm:text-7xl text-textColor font-bold leading-normal tracking-widest mb-4;
+  }
+  .svg-still {
+    @apply hidden 2xl:block absolute fill-current non-select;
+  }
+  .svg-move {
+    @apply svg-still animate-moving;
+  }
+  .svg-move-wide {
+    @apply svg-still animate-movingWide;
   }
   .page-container {
     @apply w-full flex flex-col items-center;
@@ -50,6 +65,7 @@ html {
   .link-text {
     @apply text-primary
     duration-300
+    font-medium
     hover:text-linkHover;
   }
   .section-title {

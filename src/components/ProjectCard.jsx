@@ -86,7 +86,7 @@ export default function ProjectCard({
         </div>
       </div>
       <div className='flex-1'>
-        <img src={taskhouse} alt='taskhouse dashboard screenshot' className='w-144' />
+        {/* <img src={taskhouse} alt='taskhouse dashboard screenshot' className='w-144' /> */}
       </div>
     </div>
   );
