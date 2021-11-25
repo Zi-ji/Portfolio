@@ -10,6 +10,8 @@ import HexagonIcon from '../images/hexagon.inline.svg'
 import PlusMinusIcon from '../images/plusMinus.inline.svg'
 import MoreEqualIcon from '../images/moreEqual.inline.svg'
 import SquareIcon from '../images/square.inline.svg'
+import ResumeIcon from '../images/resume.inline.svg'
+import ProjectIcon from '../images/project.inline.svg'
 
 export default function Home({
   scrollToSkills,
@@ -35,19 +37,29 @@ export default function Home({
       <MoreEqualIcon className="svg-move w-28 h-28 right-1/10 top-1/3 text-textColor" />
       <TriangleIcon className="svg-move-wide w-28 h-28 left-1/5 bottom-1/2 text-linkHover" />
       
-      <main className="w-full flex flex-col md:flex-row md:justify-end">
+      <main className="w-full flex flex-col md:flex-row md:justify-center">
         
-        <div className="flex-1 flex items-center flex-col text-right md:items-end md:pr-12">
+        <div className="flex-1 flex items-center flex-col justify-around text-right md:items-end md:pr-8">
           <p className="title">
             Zh<span className='special'>iji</span>e
           </p>
           <p className="title">
             Zhu
           </p>
-          <div className='flex flex-row justify-end mt-8'>
+          <div className='flex flex-row justify-end mb-4 md:mb-0'>
             <a aria-label="Github source page" href="https://github.com/zijizhu">
               <GithubIcon className="w-12 h-12 fill-current link-text" />
             </a>
+          </div>
+          <div className='flex flex-row justify-center md:justify-end'>
+            <button className='home-button' onClick={scrollToProject}>
+              <ProjectIcon className="w-12 h-12 pr-2" />
+              Projects
+            </button>
+            <button className='home-button'>
+              <ResumeIcon className="w-12 h-12 pr-2" />
+              Resume
+            </button>
           </div>
         </div>
         

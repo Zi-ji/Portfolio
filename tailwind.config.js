@@ -5,10 +5,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundColor: (theme) => ({
-      ...theme('colors'),
-      background: '#edf2f4'
+      ...theme('colors')
     }),
     colors: {
+      background: '#edf2f4',
       primary: '#ef233c',
       textColor: '#2b2d42',
       linkHover: '#0084B8',
