@@ -1,17 +1,17 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import taskhouse from '../images/taskhouse.png';
-
+import medican from '../images/medician.png'
 import Arrow from '../images/arrow.inline.svg';
 
 export default function Project({ refProp, scrollToSkills }) {
   return (
     <div ref={refProp} className="page-container bg-background2">
-      <main className="pt-8 xl:pt-4 sm:pt-8 sm:pb-0 main-container">
+      <main className="py-16 main-container">
         <div className="flex-1 flex flex-col justify-center">
-          <div className="w-full flex flex-col sm:items-center">
+          <div className="w-full flex flex-col items-center">
             <p className="section-title">PROJECTS 💻</p>
-            <p className="section-subtitle mt-4 mb-4 sm:text-center sm:pl-4 sm:pr-4">
+            <p className="section-subtitle text-center m-4">
               Check out a few projects I've been involved in.
             </p>
           </div>
@@ -22,6 +22,8 @@ export default function Project({ refProp, scrollToSkills }) {
             for users to connect with their collaborators through a user-friendly interface."
             technologies={['ReactJS', 'TypeScript', 'Firebase', 'Material-UI']}
             link1="https://github.com/COMP3900-9900-Capstone-Project"
+            image={taskhouse}
+            imageAlt='taskhouse screenshot'
           />
           <ProjectCard
             title="Footsteps"
@@ -36,14 +38,18 @@ export default function Project({ refProp, scrollToSkills }) {
             demo="https://www.youtube.com/watch?v=cRgM0WEVUEQ&list=PLtdbwEd-4QWHZTWOyB2W73nn9hwAoLj6c"
             link1="https://github.com/Zi-ji/footsteps"
             link2="https://www.youtube.com/watch?v=-Ruo8NlrkCo&list=PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index=2&ab_channel=CSESoc"
+            image={taskhouse}
+            imageAlt='taskhouse screenshot'
           />
           <ProjectCard
-            title="*this"
+            title="Medician"
             notes={{ title: 'Personal Portfolio' }}
             description="The current website. A single page app built with GatsbyJS and Tailwind CSS. I hope you like it :)"
             technologies={['GatsbyJS', 'Tailwind-CSS']}
             source="https://github.com/Zi-ji/Portfolio"
             link1="https://github.com/Zi-ji/Portfolio"
+            image={medican}
+            imageAlt='medician screenshots'
           />
         </div>
       </main>

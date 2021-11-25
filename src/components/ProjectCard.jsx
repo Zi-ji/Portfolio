@@ -1,7 +1,6 @@
 import React from 'react';
 import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
-import taskhouse from '../images/taskhouse.png';
 import GetIcons from './GetIcons';
 
 export default function ProjectCard({
@@ -11,70 +10,62 @@ export default function ProjectCard({
   technologies,
   source,
   demo,
+  image,
+  imageAlt = '',
   link1,
   link2
 }) {
   return (
     <div className="project-card">
-      <div className='flex-1 flex flex-col sm:flex-row justify-end'>
-        <div className='w-128 h-full flex flex-col justify-center'>
-          <a
-            href={link1}
-            className="text-2xl sm:text-4xl text-primary font-bold duration-500 hover:text-linkHover"
-          >
+      
+      <div className='flex-1 flex flex-col sm:flex-row justify-end sm:pr-8'>
+        
+        <div className='w-128 max-w-full h-full flex flex-col justify-center'>
+          <p className="text-3xl font-bold mb-4">
             {title}
-          </a>
-          <p className="text-xl text-textColor font-bold">
-            {notes.title}
-            {notes.award && (
-              <a href={link2} className="text-primary hover:text-linkHover">
-                {'  '}
-                {notes.award}
-              </a>
-            )}
           </p>
-          <p className="text-textColor font-medium text-xl">{description}</p>
+          <p className="text-xl text-textColor font-medium">
+            {notes.title}
+          </p>
+          {notes.award && (
+            <a href={link2} className="text-primary text-xl font-medium hover:text-linkHover">
+              {'  '}
+              {notes.award}
+            </a>
+          )}
+          <p className="text-textColor text-xl my-4">{description}</p>
 
-          <div className="h-fullflex flex-col pl-12 pt-4 pb-4">
-            <div className="flex flex-row justify-around">
-              <p className="text-base text-textColor font-bold sm:text-s">
+          <div className="flex flex-col">
+            <div className="flex flex-row my-2">
+              <p className="text-xl text-textColor font-bold mr-2">
                 Technologies
               </p>
               {technologies &&
                 technologies.map((item, idx) => {
                   return (
-                    <div key={idx} className="flex flex-row">
+                    <div key={idx}>
                       {GetIcons(item)}
-                      {/* <p className="font-semibold text-textColor ml-2">{item}</p> */}
                     </div>
                   );
                 })}
             </div>
             {(source || demo) && (
-              <div className="flex flex-col justify-around">
+              <div className="flex flex-col justify-around my-2">
                 {source && (
-                  <div className="flex flex-row items-center">
-                    <a
-                      href={source}
-                      aria-label="Github source page"
-                      className="text-base text-textColor font-bold sm:text-s pr-2 text-primary hover:text-linkHover"
-                    >
+                  <div className="flex flex-row items-center my-2">
+                    <p className="text-xl font-bold mr-2">
                       Source Code
-                    </a>
+                    </p>
                     <a aria-label="Github source page" href={source}>
                       <GithubIcon />
                     </a>
                   </div>
                 )}
                 {demo && (
-                  <div className="flex flex-row items-center">
-                    <a
-                      href={demo}
-                      aria-label="Demo video on youtube"
-                      className="text-base text-textColor font-bold sm:text-s pr-2 text-primary hover:text-linkHover"
-                    >
+                  <div className="flex flex-row items-center my-2">
+                    <p className="text-xl font-bold mr-2">
                       Demo
-                    </a>
+                    </p>
                     <a aria-label="Demo video on youtube" href={demo}>
                       <YtbIcon />
                     </a>
@@ -85,9 +76,11 @@ export default function ProjectCard({
           </div>
         </div>
       </div>
+      
       <div className='flex-1'>
-        {/* <img src={taskhouse} alt='taskhouse dashboard screenshot' className='w-144' /> */}
+        <img src={image} alt={imageAlt} className='w-168 max-w-full mb-8 sm:mb-0 rounded-xl shadow-xl' />
       </div>
+
     </div>
   );
 }

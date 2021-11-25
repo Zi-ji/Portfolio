@@ -22,7 +22,7 @@ html {
 
 @layer components {
   p {
-    @apply text-textColor font-outfit tracking-wide leading-10;
+    @apply text-textColor font-outfit leading-10;
   }
   .title {
     @apply text-6xl sm:text-7xl text-textColor font-bold leading-normal tracking-widest mb-4;
@@ -45,9 +45,12 @@ html {
   .project-card {
     @apply w-full
     flex
-    flex-col
+    flex-col-reverse
     sm:flex-row
-    items-stretch;
+    items-stretch
+    py-8
+    my-4
+    px-4;
   }
   .navlink {
     @apply ml-4
