@@ -24,16 +24,21 @@ export default function Project({ refProp, scrollToSkills }) {
           </div>
           <ProjectCard
             title="Medician"
-            notes={{ title: 'Personal Portfolio' }}
+            notes={{
+              title: 'UNSW CSESoc Project Competition 2021',
+              award: 'Third Prize'
+            }}
             description={medicianDescription}
             technologies={['React Native']}
+            awardLink='https://www.facebook.com/events/184882760245206/?active_tab=discussion'
             source="https://github.com/Zi-ji/Portfolio"
             image={medican}
             imageAlt='medician screenshots'
+            storeLink='https://apps.apple.com/au/app/medician/id1584595040'
           />
           <ProjectCard
             title="TaskHouse"
-            notes={{ title: 'COMP3900 Capstone project' }}
+            notes={{ title: 'UNSW COMP3900 Capstone project' }}
             description="A collaborative platform for teams to communicate the state of their tasks,
             for users to connect with their collaborators through a user-friendly interface."
             technologies={['ReactJS', 'TypeScript', 'Firebase', 'Material-UI']}
@@ -43,7 +48,7 @@ export default function Project({ refProp, scrollToSkills }) {
           <ProjectCard
             title="Footsteps"
             notes={{
-              title: 'UNSW CSESoc 24H Flagship Hackathon',
+              title: 'UNSW CSESoc 24H Flagship Hackathon 2021',
               award: 'Prospa Beginner Prize'
             }}
             description="Aims to link a student’s schooling experience with relevant industry

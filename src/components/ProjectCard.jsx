@@ -1,6 +1,7 @@
 import React from 'react';
 import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
+import AppStoreIcon from '../images/appStore.inline.svg'
 import GetIcons from './GetIcons';
 
 export default function ProjectCard({
@@ -43,7 +44,7 @@ export default function ProjectCard({
           <p className="text-textColor text-xl my-4">{description}</p>
 
           <div className="flex flex-row my-2">
-            <p className="text-xl text-textColor font-bold mr-2">
+            <p className="text-xl text-textColor font-bold mr-4">
               Technologies
             </p>
             {technologies &&
@@ -58,7 +59,7 @@ export default function ProjectCard({
 
           {source && (
             <div className="flex flex-row items-center my-2">
-              <p className="text-xl font-bold mr-2">
+              <p className="text-xl font-bold mr-4">
                 Source Code
               </p>
               <a aria-label="Github source page" href={source}>
@@ -69,7 +70,7 @@ export default function ProjectCard({
 
           {demo && (
             <div className="flex flex-row items-center my-2">
-              <p className="text-xl font-bold mr-2">
+              <p className="text-xl font-bold mr-4">
                 Demo
               </p>
               <a aria-label="Demo video on youtube" href={demo}>
@@ -78,6 +79,11 @@ export default function ProjectCard({
             </div>
           )}
 
+          {storeLink && (
+            <a aria-label="Download on AppStore" className='my-2' href={storeLink}>
+              <AppStoreIcon />
+            </a>
+          )}
         </div>
       </div>
     </div>

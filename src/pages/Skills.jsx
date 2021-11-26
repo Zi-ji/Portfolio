@@ -1,9 +1,7 @@
 import React from 'react';
 import Course from '../components/Course';
-import Skillboard from '../components/Skillboard';
-import Arrow from '../images/arrow.inline.svg';
 
-export default function Skills({ refProp, scrollToContact }) {
+export default function Skills({ refProp }) {
   return (
     <div ref={refProp} className="page-container">
       <main className="w-240 min-h-full max-w-full flex-1 flex flex-col justify-center items-stretch sm:flex-col">
@@ -39,48 +37,6 @@ export default function Skills({ refProp, scrollToContact }) {
               />
             </div>
           </div>
-          <div className="sm:hidden h-96 border-r-4 self-center border-textColor" />
-          <div className="flex-1 flex flex-col pl-12 pr-8 pt-28 3xl:pt-16 2xl:pt-8 xl:pt-4 justify-center">
-            <div className="h-196">
-              <div>
-                <p className="section-title">Skills ⛏</p>
-                <p className="section-subtitle">
-                  Tools and Technologies I've used
-                </p>
-              </div>
-              <div>
-                <Skillboard
-                  title="WEB FRONTEND"
-                  items={[
-                    'JavaScript',
-                    'TypeScript',
-                    'ReactJS',
-                    'Redux',
-                    'Material-UI',
-                    'Tailwind-CSS'
-                  ]}
-                />
-                <Skillboard
-                  title="BACKEND"
-                  items={['Firebase', 'Python', 'Java', 'PostgreSQL']}
-                />
-                <Skillboard
-                  title="Also had experiences with..."
-                  items={['C++', 'Shell', 'Perl']}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="sm:hidden flex flex-col justify-center items-center mb-12">
-          <a
-            aria-label="Go to contact page"
-            href="#Contact"
-            onClick={scrollToContact}
-            className="animate-bounce mt-4"
-          >
-            <Arrow />
-          </a>
         </div>
       </main>
     </div>

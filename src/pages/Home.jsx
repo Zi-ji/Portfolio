@@ -56,10 +56,10 @@ export default function Home({
               <ProjectIcon className="w-12 h-12 pr-2" />
               Projects
             </button>
-            <button className='home-button'>
+            <a className='home-button' download href={'Zhijie_Zhu_Resume.pdf'}>
               <ResumeIcon className="w-12 h-12 pr-2" />
               Resume
-            </button>
+            </a>
           </div>
         </div>
         
