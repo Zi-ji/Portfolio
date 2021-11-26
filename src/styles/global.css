@@ -28,7 +28,7 @@ html {
     @apply text-6xl sm:text-7xl text-textColor font-bold leading-normal tracking-widest mb-4;
   }
   .svg-still {
-    @apply hidden 2xl:block absolute fill-current non-select;
+    @apply hidden xl:block absolute fill-current non-select;
   }
   .svg-move {
     @apply svg-still animate-moving;
@@ -45,9 +45,9 @@ html {
   .project-card {
     @apply w-full
     flex
-    flex-col-reverse
-    sm:flex-row
-    items-stretch
+    flex-col
+    lg:flex-row
+    justify-center
     py-8
     my-4
     px-4;

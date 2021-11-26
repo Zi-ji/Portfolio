@@ -2,7 +2,14 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import taskhouse from '../images/taskhouse.png';
 import medican from '../images/medician.png'
-import Arrow from '../images/arrow.inline.svg';
+import footsteps from '../images/footsteps.png'
+
+const medicianDescription = `
+Medician is a health tracking app
+that is intuitive and easy to use.
+You will be able to record details about your symptoms
+and set notifications for your medical + fitness routines.
+`
 
 export default function Project({ refProp, scrollToSkills }) {
   return (
@@ -16,19 +23,27 @@ export default function Project({ refProp, scrollToSkills }) {
             </p>
           </div>
           <ProjectCard
+            title="Medician"
+            notes={{ title: 'Personal Portfolio' }}
+            description={medicianDescription}
+            technologies={['React Native']}
+            source="https://github.com/Zi-ji/Portfolio"
+            image={medican}
+            imageAlt='medician screenshots'
+          />
+          <ProjectCard
             title="TaskHouse"
             notes={{ title: 'COMP3900 Capstone project' }}
             description="A collaborative platform for teams to communicate the state of their tasks,
             for users to connect with their collaborators through a user-friendly interface."
             technologies={['ReactJS', 'TypeScript', 'Firebase', 'Material-UI']}
-            link1="https://github.com/COMP3900-9900-Capstone-Project"
             image={taskhouse}
             imageAlt='taskhouse screenshot'
           />
           <ProjectCard
             title="Footsteps"
             notes={{
-              title: 'UNSW CSESoc Flagship Hackathon',
+              title: 'UNSW CSESoc 24H Flagship Hackathon',
               award: 'Prospa Beginner Prize'
             }}
             description="Aims to link a student’s schooling experience with relevant industry
@@ -36,20 +51,9 @@ export default function Project({ refProp, scrollToSkills }) {
             technologies={['React Native']}
             source="https://github.com/Zi-ji/footsteps"
             demo="https://www.youtube.com/watch?v=cRgM0WEVUEQ&list=PLtdbwEd-4QWHZTWOyB2W73nn9hwAoLj6c"
-            link1="https://github.com/Zi-ji/footsteps"
-            link2="https://www.youtube.com/watch?v=-Ruo8NlrkCo&list=PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index=2&ab_channel=CSESoc"
-            image={taskhouse}
+            awardLink="https://www.youtube.com/watch?v=-Ruo8NlrkCo&list=PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index=2&ab_channel=CSESoc"
+            image={footsteps}
             imageAlt='taskhouse screenshot'
-          />
-          <ProjectCard
-            title="Medician"
-            notes={{ title: 'Personal Portfolio' }}
-            description="The current website. A single page app built with GatsbyJS and Tailwind CSS. I hope you like it :)"
-            technologies={['GatsbyJS', 'Tailwind-CSS']}
-            source="https://github.com/Zi-ji/Portfolio"
-            link1="https://github.com/Zi-ji/Portfolio"
-            image={medican}
-            imageAlt='medician screenshots'
           />
         </div>
       </main>

@@ -34,7 +34,7 @@ export default function Home({
       <HexagonIcon className="svg-move-wide w-28 h-28 bottom-1/6 right-1/5 text-special" />
       <KiteIcon className="svg-still w-20 h-20 bottom-1/10 left-1/3 text-svgColor" />
       <SquareIcon className="svg-still w-20 h-20 right-1/20 bottom-1/3 text-svgColor" />
-      <MoreEqualIcon className="svg-move w-28 h-28 right-1/10 top-1/3 text-textColor" />
+      <MoreEqualIcon className="svg-move w-28 h-28 right-1/20 2xl:right-1/10 top-1/3 text-textColor" />
       <TriangleIcon className="svg-move-wide w-28 h-28 left-1/5 bottom-1/2 text-linkHover" />
       
       <main className="w-full flex flex-col md:flex-row md:justify-center">
