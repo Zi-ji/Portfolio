@@ -7,12 +7,10 @@ import TSIcon from '../images/typescript.inline.svg';
 import GatsbyIcon from '../images/gatsbyjs.inline.svg';
 import TailwindIcon from '../images/tailwindcss.inline.svg';
 import JSIcon from '../images/javascript.inline.svg';
+import { TechnologyType } from '../types';
 import ReduxIcon from '../images/redux.inline.svg';
 
-export type TechName = 'ReactJS' | 'Firebase' | 'Material-UI' | 'React Native' |
-'GatsbyJS' | 'Tailwind-CSS' | 'JavaScript' | 'TypeScript' | 'Redux';
-
-export default function TechIcons({ name, className }: { name: TechName; className?: string }) {
+export default function TechIcons({ name, className }: { name: TechnologyType; className?: string }) {
   switch (name) {
     case 'ReactJS':
       return <ReactIcon className={className} />;

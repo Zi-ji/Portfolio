@@ -1,15 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import HomeBackground from '../components/HomeBackground';
 import GithubIcon from '../images/github.inline.svg';
-import CodeIcon from '../images/code.inline.svg'
-import DivideIcon from '../images/divide.inline.svg'
-import KiteIcon from '../images/kite.inline.svg'
-import PlusIcon from '../images/plus.inline.svg'
-import TriangleIcon from '../images/triangle.inline.svg'
-import HexagonIcon from '../images/hexagon.inline.svg'
-import PlusMinusIcon from '../images/plusMinus.inline.svg'
-import MoreEqualIcon from '../images/moreEqual.inline.svg'
-import SquareIcon from '../images/square.inline.svg'
 import ResumeIcon from '../images/resume.inline.svg'
 import ProjectIcon from '../images/project.inline.svg'
 
@@ -23,7 +15,7 @@ export default function Home({
   scrollToContact: () => void;
 }) {
   return (
-    <div className="page-container relative min-h-screen justify-between">
+    <div className="page-container min-h-screen justify-between">
       
       <Navbar
         scrollToEdu={scrollToEdu}
@@ -31,17 +23,9 @@ export default function Home({
         scrollToContact={scrollToContact}
       />
       
-      <CodeIcon className="svg-move w-20 h-20 top-1/6 left-1/6 text-textColor" />
-      <PlusIcon className="svg-still w-20 h-20 top-1/10 left-1/2 text-svgColor" />
-      <PlusMinusIcon className="svg-still absolute w-24 h-24 bottom-1/3 left-1/20 text-svgColor" />
-      <DivideIcon className="svg-still w-24 h-24 top-1/10 right-1/10 text-svgColor" />
-      <HexagonIcon className="svg-move-wide w-28 h-28 bottom-1/6 right-1/5 text-special" />
-      <KiteIcon className="svg-still w-20 h-20 bottom-1/10 left-1/3 text-svgColor" />
-      <SquareIcon className="svg-still w-20 h-20 right-1/20 bottom-1/3 text-svgColor" />
-      <MoreEqualIcon className="svg-move w-28 h-28 right-1/20 2xl:right-1/10 top-1/3 text-textColor" />
-      <TriangleIcon className="svg-move-wide w-28 h-28 left-1/5 bottom-1/2 text-linkHover" />
+      <HomeBackground />
       
-      <main className="w-full flex flex-col md:flex-row md:justify-center">
+      <main className="relative w-full flex flex-col md:flex-row md:justify-center z-10">
         
         <div className="flex-1 flex items-center flex-col justify-around text-right md:items-end md:pr-8">
           <p className="title">
@@ -110,7 +94,6 @@ export default function Home({
             </p>
           </div>
         </div>
-
       </main>
       <div />
     </div>

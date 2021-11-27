@@ -2,7 +2,7 @@ import React from 'react';
 import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
 import AppStoreIcon from '../images/appStore.inline.svg'
-import { TechName } from './TechIcon';
+import { ProjectCardProps } from '../types';
 import TechIcon from './TechIcon';
 
 export default function ProjectCard({
@@ -16,21 +16,7 @@ export default function ProjectCard({
   imageAlt = '',
   awardLink,
   storeLink
-} : {
-  title: string;
-  notes: {
-    title: string;
-    award?: string;
-  };
-  description: string;
-  technologies: TechName[];
-  source?: string;
-  demo?: string;
-  image: string;
-  imageAlt: string;
-  awardLink?: string;
-  storeLink?: string;
-}) {
+} : ProjectCardProps) {
   return (
     <div className="project-card">
 
@@ -38,7 +24,7 @@ export default function ProjectCard({
         <img src={image} alt={imageAlt} className='h-auto w-168 max-w-full mb-8 lg:mb-0 rounded-xl shadow-xl' />
       </div>
       
-      <div className='flex flex-col sm:flex-row sm:pl-16'>     
+      <div className='flex flex-col sm:flex-row sm:pl-16'>
         <div className='w-96 w-full max-w-lg h-full flex flex-col justify-center'>
           
           <p className="text-3xl font-bold mb-4">

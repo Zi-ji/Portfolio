@@ -25,16 +25,22 @@ html {
     @apply text-textColor font-outfit leading-10;
   }
   .title {
-    @apply text-6xl sm:text-7xl text-textColor font-bold leading-normal tracking-widest mb-4;
+    @apply text-6xl
+    sm:text-7xl
+    text-textColor
+    font-bold
+    leading-normal
+    tracking-widest
+    mb-4;
   }
-  .svg-still {
-    @apply hidden xl:block absolute fill-current non-select;
+  .svg-base {
+    @apply absolute fill-current non-select;
   }
   .svg-move {
-    @apply svg-still animate-moving;
+    @apply svg-base animate-moving;
   }
   .svg-move-wide {
-    @apply svg-still animate-movingWide;
+    @apply svg-base animate-movingWide;
   }
   .page-container {
     @apply w-full flex flex-col items-center;

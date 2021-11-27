@@ -8,8 +8,8 @@ module.exports = {
       ...theme('colors')
     }),
     colors: {
-      background: '#edf2f4',
       primary: '#ef233c',
+      background: '#edf2f4',
       textColor: '#2b2d42',
       linkHover: '#0084B8',
       background2: '#F3F4F7',
@@ -18,11 +18,11 @@ module.exports = {
       transparent: 'transparent'
     },
     inset: {
-      '1/10': '10%',
-      '1/20': '5%',
       '1/50': '2.5%',
-      '1/5': '20%',
+      '1/20': '5%',
+      '1/10': '10%',
       '1/6': '15%',
+      '1/5': '20%',
       '1/4': '25%',
       '1/3': '33%',
       '1/2': '50%'
@@ -52,6 +52,10 @@ module.exports = {
           '0%, 100%': { transform: 'translate3d(0,0,0)' },
           '50%': { transform: 'translate3d(0,30px,0)' },
         },
+      },
+      zIndex: {
+        '-10': '-10',
+        '10': '10'
       }
     }
   },
