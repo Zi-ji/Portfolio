@@ -1,9 +1,9 @@
 import React from 'react';
 import Course from '../components/Course';
 
-export default function Skills({ refProp }) {
+export default function Education({ pageRef } : { pageRef: React.MutableRefObject<HTMLDivElement | null>}) {
   return (
-    <div ref={refProp} className="page-container">
+    <div ref={pageRef} className="page-container">
       <main className="w-240 min-h-full max-w-full flex-1 flex flex-col justify-center items-stretch sm:flex-col">
         <div className="flex flex-row">
           <div className="flex-1 flex flex-col pl-8 pr-8 pt-28 3xl:pt-16 2xl:pt-8 xl:pt-4 sm:mb-20 sm:mt-12 justify-center">

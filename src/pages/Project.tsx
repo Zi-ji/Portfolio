@@ -11,9 +11,9 @@ You will be able to record details about your symptoms
 and set notifications for your medical + fitness routines.
 `
 
-export default function Project({ refProp }) {
+export default function Project({ pageRef } : { pageRef: React.MutableRefObject<HTMLDivElement | null>}) {
   return (
-    <div ref={refProp} className="page-container bg-background2">
+    <div ref={pageRef} className="page-container bg-background2">
       <main className="py-16 main-container">
         <div className="flex-1 flex flex-col justify-center">
           <div className="w-full flex flex-col items-center">

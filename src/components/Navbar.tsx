@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function Navbar({
-  scrollToSkills,
+  scrollToEdu,
   scrollToProject,
   scrollToContact
 }: {
-  scrollToSkills: () => void;
+  scrollToEdu: () => void;
   scrollToProject: () => void;
   scrollToContact: () => void;
 }) {
@@ -22,7 +22,7 @@ export default function Navbar({
         <a
           href="#Education"
           className="navlink"
-          onClick={scrollToSkills}
+          onClick={scrollToEdu}
         >
           About Me
         </a>

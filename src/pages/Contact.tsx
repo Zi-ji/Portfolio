@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Contact({ refProp }) {
+export default function Contact({ pageRef } : { pageRef: React.MutableRefObject<HTMLDivElement | null>}) {
   return (
-    <div ref={refProp} className="page-container">
+    <div ref={pageRef} className="page-container">
       <main className="w-144 main-container justify-center items-stretch">
         <div className="flex flex-col justify-center sm:items-center">
           <p className="section-title">Contact me ☎</p>

@@ -20,16 +20,16 @@ export default function ProjectCard({
   title: string;
   notes: {
     title: string;
-    award: string;
+    award?: string;
   };
   description: string;
   technologies: TechName[];
-  source: string;
-  demo: string;
+  source?: string;
+  demo?: string;
   image: string;
   imageAlt: string;
-  awardLink: string;
-  storeLink: string;
+  awardLink?: string;
+  storeLink?: string;
 }) {
   return (
     <div className="project-card">

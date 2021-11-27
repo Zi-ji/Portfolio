@@ -14,15 +14,19 @@ import ResumeIcon from '../images/resume.inline.svg'
 import ProjectIcon from '../images/project.inline.svg'
 
 export default function Home({
-  scrollToSkills,
   scrollToProject,
+  scrollToEdu,
   scrollToContact
+} : {
+  scrollToProject: () => void;
+  scrollToEdu: () => void;
+  scrollToContact: () => void;
 }) {
   return (
     <div className="page-container relative min-h-screen justify-between">
       
       <Navbar
-        scrollToSkills={scrollToSkills}
+        scrollToEdu={scrollToEdu}
         scrollToProject={scrollToProject}
         scrollToContact={scrollToContact}
       />
@@ -94,7 +98,7 @@ export default function Home({
               .<br />
               <br />
               He is currently based in Sydney. You can learn more about his
-              projects, education and skills here. Feel free to{' '}
+              projects and education here. Feel free to{' '}
               <a
                 href="#Contact"
                 onClick={scrollToContact}
