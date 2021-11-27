@@ -6,6 +6,7 @@ export type ProjectCardProps = {
   notes: {
     title: string;
     award?: string;
+    awardLink?: string;
   };
   description: string;
   technologies: TechnologyType[];
@@ -13,6 +14,5 @@ export type ProjectCardProps = {
   demo?: string;
   image: string;
   imageAlt: string;
-  awardLink?: string;
   storeLink?: string;
 }

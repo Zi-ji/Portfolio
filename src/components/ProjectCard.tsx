@@ -14,7 +14,6 @@ export default function ProjectCard({
   demo,
   image,
   imageAlt = '',
-  awardLink,
   storeLink
 } : ProjectCardProps) {
   return (
@@ -36,7 +35,7 @@ export default function ProjectCard({
           </p>
 
           {notes.award && (
-            <a href={awardLink} className="link-text text-xl">
+            <a href={notes.awardLink} className="link-text text-xl">
               {'  '}
               {notes.award}
             </a>
