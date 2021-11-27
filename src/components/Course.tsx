@@ -1,6 +1,18 @@
 import React from 'react';
 
-export default function Course({ code, name, description, mark, link }) {
+export default function Course({
+  code,
+  name,
+  description,
+  mark,
+  link
+} : {
+  code: string;
+  name: string;
+  description: string;
+  mark: string;
+  link: string;
+}) {
   return (
     <div className="h-44 max-w-full mt-8 pl-8 flex flex-col justify-around card-style">
       <div>

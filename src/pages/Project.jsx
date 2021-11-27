@@ -11,7 +11,7 @@ You will be able to record details about your symptoms
 and set notifications for your medical + fitness routines.
 `
 
-export default function Project({ refProp, scrollToSkills }) {
+export default function Project({ refProp }) {
   return (
     <div ref={refProp} className="page-container bg-background2">
       <main className="py-16 main-container">

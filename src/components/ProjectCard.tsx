@@ -2,7 +2,8 @@ import React from 'react';
 import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
 import AppStoreIcon from '../images/appStore.inline.svg'
-import GetIcons from './GetIcons';
+import { TechName } from './TechIcon';
+import TechIcon from './TechIcon';
 
 export default function ProjectCard({
   title,
@@ -15,6 +16,20 @@ export default function ProjectCard({
   imageAlt = '',
   awardLink,
   storeLink
+} : {
+  title: string;
+  notes: {
+    title: string;
+    award: string;
+  };
+  description: string;
+  technologies: TechName[];
+  source: string;
+  demo: string;
+  image: string;
+  imageAlt: string;
+  awardLink: string;
+  storeLink: string;
 }) {
   return (
     <div className="project-card">
@@ -51,7 +66,7 @@ export default function ProjectCard({
               technologies.map((item, idx) => {
                 return (
                   <div key={idx}>
-                    {GetIcons(item)}
+                    <TechIcon name={item} />
                   </div>
                 );
               })}

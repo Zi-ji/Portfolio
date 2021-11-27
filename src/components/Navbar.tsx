@@ -4,6 +4,10 @@ export default function Navbar({
   scrollToSkills,
   scrollToProject,
   scrollToContact
+}: {
+  scrollToSkills: () => void;
+  scrollToProject: () => void;
+  scrollToContact: () => void;
 }) {
   return (
     <nav className="w-full h-16 border-t-8 border-primary flex flex-row justify-center">
