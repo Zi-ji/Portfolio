@@ -1,8 +1,6 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     backgroundColor: (theme) => ({
       ...theme('colors')
@@ -46,16 +44,16 @@ module.exports = {
       keyframes: {
         movingWide: {
           '0%, 100%': { transform: 'translate3d(0,0,0)' },
-          '50%': { transform: 'translate3d(0,80px,0)' },
+          '50%': { transform: 'translate3d(0,80px,0)' }
         },
         moving: {
           '0%, 100%': { transform: 'translate3d(0,0,0)' },
-          '50%': { transform: 'translate3d(0,30px,0)' },
-        },
+          '50%': { transform: 'translate3d(0,30px,0)' }
+        }
       },
       zIndex: {
         '-10': '-10',
-        '10': '10'
+        10: '10'
       }
     }
   },

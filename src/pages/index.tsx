@@ -7,7 +7,6 @@ import usePageRefs from '../hooks/usePageRefs';
 import Contact from './Contact';
 
 export default function App() {
-  
   const {
     projectRef,
     educationRef,
@@ -22,12 +21,7 @@ export default function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Zhijie Zhu</title>
-        <link
-          rel="icon"
-          type="image/png"
-          href="favicon.ico"
-          sizes="16x16"
-        />
+        <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
       </Helmet>
       <div className="bg-background">
         <Home

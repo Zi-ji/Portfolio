@@ -6,7 +6,7 @@ export default function Course({
   description,
   mark,
   link
-} : {
+}: {
   code: string;
   name: string;
   description: string;

@@ -12,18 +12,10 @@ export default function Navbar({
   return (
     <nav className="relative w-full h-16 border-t-8 border-primary flex flex-row justify-center z-10">
       <div className="flex flex-row items-center w-240">
-        <a
-          href="#Projects"
-          className="navlink"
-          onClick={scrollToProject}
-        >
+        <a href="#Projects" className="navlink" onClick={scrollToProject}>
           Projects
         </a>
-        <a
-          href="#Education"
-          className="navlink"
-          onClick={scrollToEdu}
-        >
+        <a href="#Education" className="navlink" onClick={scrollToEdu}>
           About Me
         </a>
         <a href="#Contact" className="navlink" onClick={scrollToContact}>

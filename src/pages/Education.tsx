@@ -1,7 +1,11 @@
 import React from 'react';
 import Course from '../components/Course';
 
-export default function Education({ pageRef } : { pageRef: React.MutableRefObject<HTMLDivElement | null>}) {
+export default function Education({
+  pageRef
+}: {
+  pageRef: React.MutableRefObject<HTMLDivElement | null>;
+}) {
   return (
     <div ref={pageRef} className="page-container">
       <main className="w-240 min-h-full max-w-full flex-1 flex flex-col justify-center items-stretch sm:flex-col">

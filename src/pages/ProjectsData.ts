@@ -1,16 +1,16 @@
-import { ProjectCardProps } from "../types";
+import { ProjectCardProps } from '../types';
 import taskhouse from '../images/taskhouse.png';
-import medican from '../images/medician.png'
-import footsteps from '../images/footsteps.png'
+import medican from '../images/medician.png';
+import footsteps from '../images/footsteps.png';
 
-export const projectsData: ProjectCardProps[] =
-[
+export const projectsData: ProjectCardProps[] = [
   {
     title: 'Medician',
     notes: {
       title: 'UNSW CSESoc Project Competition 2021',
       award: 'Third Prize',
-      awardLink: 'https://www.facebook.com/events/184882760245206/?active_tab:discussion',
+      awardLink:
+        'https://www.facebook.com/events/184882760245206/?active_tab:discussion'
     },
     description: `
       Medician is a health tracking app
@@ -19,13 +19,13 @@ export const projectsData: ProjectCardProps[] =
       and set notifications for your medical + fitness routines.
     `,
     technologies: ['React Native'],
-    source: "https://github.com/Zi-ji/Portfolio",
+    source: 'https://github.com/Zi-ji/Portfolio',
     image: medican,
     imageAlt: 'medician screenshots',
-    storeLink: 'https://apps.apple.com/au/app/medician/id1584595040',
+    storeLink: 'https://apps.apple.com/au/app/medician/id1584595040'
   },
   {
-    title: "TaskHouse",
+    title: 'TaskHouse',
     notes: { title: 'UNSW COMP3900 Capstone project' },
     description: `
       A collaborative platform for teams to
@@ -35,14 +35,15 @@ export const projectsData: ProjectCardProps[] =
     `,
     technologies: ['ReactJS', 'TypeScript', 'Firebase', 'Material-UI'],
     image: taskhouse,
-    imageAlt:'taskhouse screenshot'
+    imageAlt: 'taskhouse screenshot'
   },
   {
-    title:"Footsteps",
+    title: 'Footsteps',
     notes: {
       title: 'UNSW CSESoc 24H Flagship Hackathon 2021',
       award: 'Prospa Beginner Prize',
-      awardLink: "https://www.youtube.com/watch?v:-Ruo8NlrkCo&list:PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index:2&ab_channel:CSESoc",
+      awardLink:
+        'https://www.youtube.com/watch?v:-Ruo8NlrkCo&list:PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index:2&ab_channel:CSESoc'
     },
     description: `
       Aims to link a student’s schooling experience with relevant
@@ -50,10 +51,10 @@ export const projectsData: ProjectCardProps[] =
       and decision on future career choices. (MVP)
     `,
     technologies: ['React Native'],
-    source: "https://github.com/Zi-ji/footsteps",
-    demo: "https://www.youtube.com/watch?v:cRgM0WEVUEQ&list:PLtdbwEd-4QWHZTWOyB2W73nn9hwAoLj6c",
+    source: 'https://github.com/Zi-ji/footsteps',
+    demo: 'https://www.youtube.com/watch?v:cRgM0WEVUEQ&list:PLtdbwEd-4QWHZTWOyB2W73nn9hwAoLj6c',
     image: footsteps,
-    imageAlt:'taskhouse screenshot'
+    imageAlt: 'taskhouse screenshot'
   }
 ];
 

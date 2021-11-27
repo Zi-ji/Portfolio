@@ -7,19 +7,19 @@ export default function usePageRefs() {
 
   const scrollToProject = () => {
     if (projectRef.current) {
-      projectRef.current.scrollIntoView()
+      projectRef.current.scrollIntoView();
     }
-  }
+  };
   const scrollToEdu = () => {
     if (educationRef.current) {
-      educationRef.current.scrollIntoView()
+      educationRef.current.scrollIntoView();
     }
-  }
+  };
   const scrollToContact = () => {
     if (contactRef.current) {
-      contactRef.current.scrollIntoView()
+      contactRef.current.scrollIntoView();
     }
-  }
+  };
 
   return {
     projectRef,

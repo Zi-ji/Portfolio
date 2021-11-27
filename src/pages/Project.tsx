@@ -1,9 +1,12 @@
 import React from 'react';
-
 import projectsData from './ProjectsData';
 import ProjectCard from '../components/ProjectCard';
 
-export default function Project({ pageRef } : { pageRef: React.MutableRefObject<HTMLDivElement | null>}) {
+export default function Project({
+  pageRef
+}: {
+  pageRef: React.MutableRefObject<HTMLDivElement | null>;
+}) {
   return (
     <div ref={pageRef} className="page-container bg-background2">
       <main className="py-16 main-container">
@@ -14,7 +17,9 @@ export default function Project({ pageRef } : { pageRef: React.MutableRefObject<
               Check out a few projects I've been involved in.
             </p>
           </div>
-          {projectsData.map((projectItem, idx) => <ProjectCard key={idx} {...projectItem} />)}
+          {projectsData.map((projectItem, idx) => (
+            <ProjectCard key={idx} {...projectItem} />
+          ))}
         </div>
       </main>
     </div>

@@ -10,7 +10,13 @@ import JSIcon from '../images/javascript.inline.svg';
 import { TechnologyType } from '../types';
 import ReduxIcon from '../images/redux.inline.svg';
 
-export default function TechIcons({ name, className }: { name: TechnologyType; className?: string }) {
+export default function TechIcons({
+  name,
+  className
+}: {
+  name: TechnologyType;
+  className?: string;
+}) {
   switch (name) {
     case 'ReactJS':
       return <ReactIcon className={className} />;
@@ -33,4 +39,4 @@ export default function TechIcons({ name, className }: { name: TechnologyType; c
     default:
       return <ReactIcon className={className} />;
   }
-};
+}

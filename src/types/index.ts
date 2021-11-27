@@ -1,5 +1,13 @@
-export type TechnologyType = 'ReactJS' | 'Firebase' | 'Material-UI' | 'React Native' |
-'GatsbyJS' | 'Tailwind-CSS' | 'JavaScript' | 'TypeScript' | 'Redux';
+export type TechnologyType =
+  | 'ReactJS'
+  | 'Firebase'
+  | 'Material-UI'
+  | 'React Native'
+  | 'GatsbyJS'
+  | 'Tailwind-CSS'
+  | 'JavaScript'
+  | 'TypeScript'
+  | 'Redux';
 
 export type ProjectCardProps = {
   title: string;
@@ -15,4 +23,4 @@ export type ProjectCardProps = {
   image: string;
   imageAlt: string;
   storeLink?: string;
-}
+};
