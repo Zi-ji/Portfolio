@@ -46,7 +46,7 @@ html {
     @apply w-full flex flex-col items-center;
   }
   .main-container {
-    @apply w-full flex-1 flex flex-col items-stretch py-16 px-4;
+    @apply w-full flex-1 flex flex-col py-16 px-4;
   }
   .project-item {
     @apply w-full
@@ -82,7 +82,6 @@ html {
   .section-subtitle {
     @apply text-xl
     font-semibold
-    text-center
     m-4;
   }
   .home-button {

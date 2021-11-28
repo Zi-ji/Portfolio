@@ -12,7 +12,7 @@ export default function Project({
       <main className="main-container">
         <div className="w-full flex flex-col items-center">
           <p className="section-title">PROJECTS 💻</p>
-          <p className="section-subtitle">
+          <p className="section-subtitle text-center">
             Check out a few projects I've been involved in.
           </p>
         </div>
