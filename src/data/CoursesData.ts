@@ -1,6 +1,6 @@
 import { CourseProps } from "../types";
 
-const coursesData : CourseProps[] = [
+export const coursesData : CourseProps[] = [
   {
     code: "COMP3900",
     name: "Computer Science Project",

@@ -1,5 +1,5 @@
 import React from 'react';
-import coursesData from './CoursesData';
+import coursesData from '../data/CoursesData';
 import Course from '../components/Course';
 
 export default function Education({
