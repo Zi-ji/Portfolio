@@ -33,10 +33,12 @@ export default function ProjectCard({
           <p className="text-xl text-textColor font-medium">{notes.title}</p>
 
           {notes.award && (
-            <a href={notes.awardLink} className="link-text text-xl">
-              {'  '}
-              {notes.award}
-            </a>
+            <p>
+              <a href={notes.awardLink} className="link-text text-xl">
+                {'  '}
+                {notes.award}
+              </a>
+            </p>
           )}
 
           <p className="text-textColor text-xl my-4">{description}</p>
@@ -74,13 +76,15 @@ export default function ProjectCard({
           )}
 
           {storeLink && (
-            <a
-              aria-label="Download on AppStore"
-              className="my-2"
-              href={storeLink}
-            >
-              <AppStoreIcon />
-            </a>
+            <div className="flex">
+              <a
+                aria-label="Download on AppStore"
+                className="my-2 inline"
+                href={storeLink}
+              >
+                <AppStoreIcon />
+              </a>
+            </div>
           )}
         </div>
       </div>

@@ -27,7 +27,7 @@ export default function Education({
             </a>
             {' '}(2019-2021)
           </p>
-          <p className='section-subtitle'>University Academic Highlights</p>
+          <p className='section-subtitle'>Academic Highlights</p>
           <div className='flex flex-col lg:grid grid-cols-2 gap-6 max-w-full'>
             {coursesData.map((courseProps, idx) => (
               <Course key={idx} {...courseProps} />
