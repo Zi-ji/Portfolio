@@ -46,17 +46,15 @@ html {
     @apply w-full flex flex-col items-center;
   }
   .main-container {
-    @apply w-full flex-1 flex flex-col items-stretch;
+    @apply w-full flex-1 flex flex-col items-stretch py-16 px-4;
   }
-  .project-card {
+  .project-item {
     @apply w-full
     flex
     flex-col
     lg:flex-row
     justify-center
-    py-8
-    my-4
-    px-4;
+    my-12;
   }
   .navlink {
     @apply ml-4
@@ -83,7 +81,9 @@ html {
   }
   .section-subtitle {
     @apply text-xl
-    font-semibold;
+    font-semibold
+    text-center
+    m-4;
   }
   .home-button {
     @apply transition
@@ -103,5 +103,8 @@ html {
     flex
     flex-row
     items-center;
+  }
+  .card {
+    @apply rounded-xl shadow-xl;
   }
 }

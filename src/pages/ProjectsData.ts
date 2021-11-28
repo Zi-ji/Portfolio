@@ -10,7 +10,7 @@ export const projectsData: ProjectCardProps[] = [
       title: 'UNSW CSESoc Project Competition 2021',
       award: 'Third Prize',
       awardLink:
-        'https://www.facebook.com/events/184882760245206/?active_tab:discussion'
+        'https://www.facebook.com/events/184882760245206/?active_tab=discussion'
     },
     description: `
       Medician is a health tracking app
@@ -19,7 +19,7 @@ export const projectsData: ProjectCardProps[] = [
       and set notifications for your medical + fitness routines.
     `,
     technologies: ['React Native'],
-    source: 'https://github.com/Zi-ji/Portfolio',
+    source: 'https://github.com/zijizhu/portfolio',
     image: medican,
     imageAlt: 'medician screenshots',
     storeLink: 'https://apps.apple.com/au/app/medician/id1584595040'
@@ -43,7 +43,7 @@ export const projectsData: ProjectCardProps[] = [
       title: 'UNSW CSESoc 24H Flagship Hackathon 2021',
       award: 'Prospa Beginner Prize',
       awardLink:
-        'https://www.youtube.com/watch?v:-Ruo8NlrkCo&list:PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&index:2&ab_channel:CSESoc'
+        'https://youtu.be/-Ruo8NlrkCo?list=PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&t=335'
     },
     description: `
       Aims to link a student’s schooling experience with relevant
@@ -51,8 +51,7 @@ export const projectsData: ProjectCardProps[] = [
       and decision on future career choices. (MVP)
     `,
     technologies: ['React Native'],
-    source: 'https://github.com/Zi-ji/footsteps',
-    demo: 'https://www.youtube.com/watch?v:cRgM0WEVUEQ&list:PLtdbwEd-4QWHZTWOyB2W73nn9hwAoLj6c',
+    source: 'https://github.com/zijizhu/footsteps',
     image: footsteps,
     imageAlt: 'taskhouse screenshot'
   }

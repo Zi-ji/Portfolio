@@ -24,3 +24,12 @@ export type ProjectCardProps = {
   imageAlt: string;
   storeLink?: string;
 };
+
+
+export type CourseProps = {
+  code: string;
+  name: string;
+  description: string;
+  mark: string;
+  link: string;
+}

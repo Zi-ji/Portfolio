@@ -1,4 +1,5 @@
 import React from 'react';
+import { CourseProps } from '../types';
 
 export default function Course({
   code,
@@ -6,28 +7,22 @@ export default function Course({
   description,
   mark,
   link
-}: {
-  code: string;
-  name: string;
-  description: string;
-  mark: string;
-  link: string;
-}) {
+}: CourseProps) {
   return (
-    <div className="h-44 max-w-full mt-8 pl-8 flex flex-col justify-around card-style">
-      <div>
+    <div className="card w-128 max-w-full flex flex-col bg-background2 p-4">
+      <p>
         <a
           href={link}
-          className="text-xl text-primary font-bold duration-500 hover:text-linkHover"
+          className="link-text text-xl font-bold"
         >
           {code}
         </a>
-        <p className="text-base text-textColor italic font-bold sm:text-sm">
-          {name}
-        </p>
-      </div>
-      <p className="text-textColor font-medium sm:text-sm">{description}</p>
-      <p className="text-textColor font-bold sm:text-sm">{mark}</p>
+      </p>
+      <p className="text-lg font-bold">
+        {name}
+      </p>
+      <p className='text-lg'>{description}</p>
+      <p className="font-semibold">{mark}</p>
     </div>
   );
 }

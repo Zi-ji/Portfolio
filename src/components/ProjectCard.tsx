@@ -17,12 +17,12 @@ export default function ProjectCard({
   storeLink
 }: ProjectCardProps) {
   return (
-    <div className="project-card">
+    <div className="project-item">
       <div className="flex justify-center lg:justify-end">
         <img
           src={image}
           alt={imageAlt}
-          className="h-auto w-168 max-w-full mb-8 lg:mb-0 rounded-xl shadow-xl"
+          className="card h-auto w-168 mb-8 lg:mb-0"
         />
       </div>
 
