@@ -3,6 +3,7 @@ import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
 import AppStoreIcon from '../images/appStore.inline.svg';
 import { ProjectCardProps } from '../types';
+import TooltipIconGroup from './TooltipIconGroup';
 import TechIcon from './TechIcon';
 
 export default function ProjectCard({
@@ -27,7 +28,7 @@ export default function ProjectCard({
       </div>
 
       <div className="flex flex-col sm:flex-row sm:pl-16">
-        <div className="w-96 w-full max-w-lg h-full flex flex-col justify-center">
+        <div className="w-full max-w-lg h-full flex flex-col justify-center items-start">
           <p className="text-3xl font-bold mb-4">{title}</p>
 
           <p className="text-xl text-textColor font-medium">{notes.title}</p>
@@ -47,14 +48,7 @@ export default function ProjectCard({
             <p className="text-xl text-textColor font-bold mr-4">
               Technologies
             </p>
-            {technologies &&
-              technologies.map((item, idx) => {
-                return (
-                  <div key={idx}>
-                    <TechIcon name={item} />
-                  </div>
-                );
-              })}
+            <TooltipIconGroup techs={technologies} />
           </div>
 
           {source && (
