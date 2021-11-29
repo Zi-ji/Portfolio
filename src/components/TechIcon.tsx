@@ -7,10 +7,12 @@ import TSIcon from '../images/typescript.inline.svg';
 import GatsbyIcon from '../images/gatsbyjs.inline.svg';
 import TailwindIcon from '../images/tailwindcss.inline.svg';
 import JSIcon from '../images/javascript.inline.svg';
-import { TechnologyType } from '../types';
 import ReduxIcon from '../images/redux.inline.svg';
+import PostgresqlIcon from '../images/postgresql.inline.svg'
+import JavaIcon from '../images/java.inline.svg'
+import { TechnologyType } from '../types';
 
-export default function TechIcons({
+export default function TechIcon({
   name,
   className
 }: {
@@ -36,6 +38,10 @@ export default function TechIcons({
       return <JSIcon className={className} />;
     case 'Redux':
       return <ReduxIcon className={className} />;
+    case 'Java':
+      return <JavaIcon className={className} />;
+    case 'Postgresql':
+      return <PostgresqlIcon className={className} />
     default:
       return <ReactIcon className={className} />;
   }

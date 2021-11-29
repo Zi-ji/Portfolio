@@ -7,7 +7,9 @@ export type TechnologyType =
   | 'Tailwind-CSS'
   | 'JavaScript'
   | 'TypeScript'
-  | 'Redux';
+  | 'Redux'
+  | 'Java'
+  | 'Postgresql';
 
 export type ProjectCardProps = {
   title: string;
@@ -32,4 +34,5 @@ export type CourseProps = {
   description: string;
   mark: string;
   link: string;
+  technologies: TechnologyType[]
 }
