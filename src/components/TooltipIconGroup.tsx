@@ -29,6 +29,7 @@ export default function TooltipIconGroup({
     from: { scale: 0 },
     enter: { scale: 1 },
     leave: { scale: 0 },
+    config: {duration: 150}
   })
 
   if (windowWidth < 1100) {

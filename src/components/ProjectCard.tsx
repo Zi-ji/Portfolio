@@ -36,7 +36,7 @@ export default function ProjectCard({
               <div
                 key={idx}
                 style={{ backgroundColor: TagColors[tag]}}
-                className='rounded-lg px-2 text-background2 font-medium mr-2 select-none'
+                className='rounded-lg px-2 mr-2 select-none text-background2 font-medium'
               >
                 {tag}
               </div>

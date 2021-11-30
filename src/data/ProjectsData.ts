@@ -20,7 +20,7 @@ export const projectsData: ProjectCardProps[] = [
       and set notifications for your medical + fitness routines.
     `,
     technologies: ['React Native', 'TypeScript', 'MobX-state-tree', 'SQLite'],
-    source: 'https://github.com/zijizhu/portfolio',
+    source: 'https://github.com/fxlui/medician',
     image: medican,
     imageAlt: 'medician screenshots',
     storeLink: 'https://apps.apple.com/au/app/medician/id1584595040'
