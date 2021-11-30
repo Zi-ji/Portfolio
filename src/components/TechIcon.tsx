@@ -5,10 +5,10 @@ import MaterialIcon from '../images/material.inline.svg';
 import RNIcon from '../images/react_native.inline.svg';
 import TSIcon from '../images/typescript.inline.svg';
 import JSIcon from '../images/javascript.inline.svg';
-import MSTIcon from '../images/mst.inline.svg'
-import PostgresqlIcon from '../images/postgresql.inline.svg'
-import JavaIcon from '../images/java.inline.svg'
-import DBIcon from '../images/db.inline.svg'
+import MSTIcon from '../images/mst.inline.svg';
+import PostgresqlIcon from '../images/postgresql.inline.svg';
+import JavaIcon from '../images/java.inline.svg';
+import DBIcon from '../images/db.inline.svg';
 import { TechnologyType } from '../types';
 
 export default function TechIcon({
@@ -38,7 +38,7 @@ export default function TechIcon({
     case 'MobX-state-tree':
       return <MSTIcon className={className} />;
     case 'SQLite':
-      return <DBIcon className={className} />
+      return <DBIcon className={className} />;
     default:
       return <ReactIcon className={className} />;
   }

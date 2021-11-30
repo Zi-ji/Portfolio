@@ -1,4 +1,4 @@
-import TagColors from "../styles/TagColors";
+import TagColors from '../styles/TagColors';
 
 export type TechnologyType =
   | 'ReactJS'
@@ -17,7 +17,7 @@ type TagColorTypes = keyof typeof TagColors;
 
 export type ProjectCardProps = {
   title: string;
-  tags: TagColorTypes[]
+  tags: TagColorTypes[];
   notes: {
     title: string;
     award?: string;
@@ -32,12 +32,11 @@ export type ProjectCardProps = {
   storeLink?: string;
 };
 
-
 export type CourseProps = {
   code: string;
   name: string;
   description: string;
   mark: string;
   link: string;
-  technologies: TechnologyType[]
-}
+  technologies: TechnologyType[];
+};

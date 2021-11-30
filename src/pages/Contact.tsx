@@ -33,7 +33,6 @@ export default function Contact({
           </a>{' '}
           my Resume
         </p>
-
       </main>
       <div className="w-full border-b-8 border-primary flex flex-row justify-center">
         <p className="text-base font-medium mb-4">© 2021 Zhijie Zhu</p>

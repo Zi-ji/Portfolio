@@ -30,13 +30,13 @@ export default function ProjectCard({
 
       <div className="flex flex-col sm:flex-row sm:pl-16">
         <div className="w-full max-w-lg h-full flex flex-col justify-center items-start">
-          <div className='flex flex-row items-center mb-4'>
+          <div className="flex flex-row items-center mb-4">
             <p className="text-3xl font-bold mr-4">{title}</p>
             {tags.map((tag, idx) => (
               <div
                 key={idx}
-                style={{ backgroundColor: TagColors[tag]}}
-                className='rounded-lg px-2 mr-2 select-none text-background2 font-medium'
+                style={{ backgroundColor: TagColors[tag] }}
+                className="rounded-lg px-2 mr-2 select-none text-background2 font-medium"
               >
                 {tag}
               </div>
@@ -57,9 +57,7 @@ export default function ProjectCard({
           <p className="text-textColor text-xl my-4">{description}</p>
 
           <div className="flex flex-row items-center my-2">
-            <p className="text-xl text-textColor font-bold mr-2">
-              Built with
-            </p>
+            <p className="text-xl text-textColor font-bold mr-2">Built with</p>
             <TooltipIconGroup techs={technologies} />
           </div>
 
