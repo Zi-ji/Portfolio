@@ -23,7 +23,7 @@ export const coursesData : CourseProps[] = [
     description:  "Data models, relational database implementation, design and interaction.",
     mark: "89 HD",
     link: "https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP3311",
-    technologies: ['Postgresql']
+    technologies: ['PostgreSQL']
   },
   {
     code: "COMP6080",

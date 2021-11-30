@@ -3,13 +3,13 @@ export type TechnologyType =
   | 'Firebase'
   | 'Material-UI'
   | 'React Native'
-  | 'GatsbyJS'
-  | 'Tailwind-CSS'
   | 'JavaScript'
   | 'TypeScript'
-  | 'Redux'
+  | 'MobX-state-tree'
+  | 'SQLite'
   | 'Java'
-  | 'Postgresql';
+  | 'SQLite'
+  | 'PostgreSQL';
 
 export type ProjectCardProps = {
   title: string;

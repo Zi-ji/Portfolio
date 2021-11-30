@@ -4,12 +4,11 @@ import FirebaseIcon from '../images/firebase.inline.svg';
 import MaterialIcon from '../images/material.inline.svg';
 import RNIcon from '../images/react_native.inline.svg';
 import TSIcon from '../images/typescript.inline.svg';
-import GatsbyIcon from '../images/gatsbyjs.inline.svg';
-import TailwindIcon from '../images/tailwindcss.inline.svg';
 import JSIcon from '../images/javascript.inline.svg';
-import ReduxIcon from '../images/redux.inline.svg';
+import MSTIcon from '../images/mst.inline.svg'
 import PostgresqlIcon from '../images/postgresql.inline.svg'
 import JavaIcon from '../images/java.inline.svg'
+import DBIcon from '../images/db.inline.svg'
 import { TechnologyType } from '../types';
 
 export default function TechIcon({
@@ -30,18 +29,16 @@ export default function TechIcon({
       return <RNIcon className={className} />;
     case 'TypeScript':
       return <TSIcon className={className} />;
-    case 'GatsbyJS':
-      return <GatsbyIcon className={className} />;
-    case 'Tailwind-CSS':
-      return <TailwindIcon className={className} />;
     case 'JavaScript':
       return <JSIcon className={className} />;
-    case 'Redux':
-      return <ReduxIcon className={className} />;
     case 'Java':
       return <JavaIcon className={className} />;
-    case 'Postgresql':
-      return <PostgresqlIcon className={className} />
+    case 'PostgreSQL':
+      return <PostgresqlIcon className={className} />;
+    case 'MobX-state-tree':
+      return <MSTIcon className={className} />;
+    case 'SQLite':
+      return <DBIcon className={className} />
     default:
       return <ReactIcon className={className} />;
   }

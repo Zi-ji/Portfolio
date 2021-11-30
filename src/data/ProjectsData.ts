@@ -18,7 +18,7 @@ export const projectsData: ProjectCardProps[] = [
       You will be able to record details about your symptoms
       and set notifications for your medical + fitness routines.
     `,
-    technologies: ['React Native'],
+    technologies: ['React Native', 'TypeScript', 'MobX-state-tree', 'SQLite'],
     source: 'https://github.com/zijizhu/portfolio',
     image: medican,
     imageAlt: 'medician screenshots',
