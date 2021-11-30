@@ -6,6 +6,7 @@ import footsteps from '../images/footsteps.png';
 export const projectsData: ProjectCardProps[] = [
   {
     title: 'Medician',
+    tags: ['mobile', 'cross-platform'],
     notes: {
       title: 'UNSW CSESoc Project Competition 2021',
       award: 'Third Prize',
@@ -26,6 +27,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     title: 'TaskHouse',
+    tags: ['web'],
     notes: { title: 'UNSW COMP3900 Capstone project' },
     description: `
       A collaborative platform for teams to
@@ -39,6 +41,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     title: 'Footsteps',
+    tags: ['mobile', 'mvp'],
     notes: {
       title: 'UNSW CSESoc 24H Flagship Hackathon 2021',
       award: 'Prospa Beginner Prize',

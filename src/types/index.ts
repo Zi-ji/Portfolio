@@ -1,3 +1,5 @@
+import TagColors from "../styles/TagColors";
+
 export type TechnologyType =
   | 'ReactJS'
   | 'Firebase'
@@ -11,8 +13,11 @@ export type TechnologyType =
   | 'SQLite'
   | 'PostgreSQL';
 
+type TagColorTypes = keyof typeof TagColors;
+
 export type ProjectCardProps = {
   title: string;
+  tags: TagColorTypes[]
   notes: {
     title: string;
     award?: string;

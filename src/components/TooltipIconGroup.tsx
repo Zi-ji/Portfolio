@@ -73,7 +73,7 @@ export default function TooltipIconGroup({
                 ...transitionStyles, 
                 transformOrigin: placement === 'right' ? 'left center' : 'right center'
               }}
-              className='bg-special rounded-lg px-2 py-1 shadow-lg text-background2 font-medium'
+              className='bg-special rounded-lg px-2 py-1 shadow-lg text-background2 font-medium select-none'
             >
               {currentText}
             </animated.div>

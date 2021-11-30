@@ -3,10 +3,12 @@ import GithubIcon from '../images/github.inline.svg';
 import YtbIcon from '../images/youtube.inline.svg';
 import AppStoreIcon from '../images/appStore.inline.svg';
 import { ProjectCardProps } from '../types';
+import TagColors from '../styles/TagColors';
 import TooltipIconGroup from './TooltipIconGroup';
 
 export default function ProjectCard({
   title,
+  tags,
   notes,
   description,
   technologies,
@@ -28,7 +30,18 @@ export default function ProjectCard({
 
       <div className="flex flex-col sm:flex-row sm:pl-16">
         <div className="w-full max-w-lg h-full flex flex-col justify-center items-start">
-          <p className="text-3xl font-bold mb-4">{title}</p>
+          <div className='flex flex-row items-center mb-4'>
+            <p className="text-3xl font-bold mr-4">{title}</p>
+            {tags.map((tag, idx) => (
+              <div
+                key={idx}
+                style={{ backgroundColor: TagColors[tag]}}
+                className='rounded-lg px-2 text-background2 font-medium mr-2 select-none'
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
 
           <p className="text-xl text-textColor font-medium">{notes.title}</p>
 
