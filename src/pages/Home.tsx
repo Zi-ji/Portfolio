@@ -69,7 +69,7 @@ export default function Home({
               </a>
               . You can also call him Richard. He enjoys thinking, learning new
               things and making cool stuffs. He is recently learning{' '}
-              <a href="https://www.javascript.com/" className="link-text">
+              <a href="https://reactjs.org/" className="link-text">
                 React
               </a>
               .<br />
