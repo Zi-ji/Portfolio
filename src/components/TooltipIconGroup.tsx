@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { usePopper } from 'react-popper';
-import { TechnologyType } from '../types';
+import { useTransition, animated } from 'react-spring'
+
 import TechIcon from './TechIcon';
+import { TechnologyType } from '../types';
+import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function TooltipIconGroup({
   techs = [],
-  placement
+  placement = 'right'
 }: {
   techs?: TechnologyType[],
-  placement?: 'left' | 'right' | 'bottom'
+  placement?: 'left' | 'right'
 }) {
   const [referenceElement, setReferenceElement] = useState<HTMLDivElement | null>(null);
   const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
@@ -17,8 +20,26 @@ export default function TooltipIconGroup({
   const { styles, attributes } = usePopper(
     referenceElement,
     popperElement,
-    { placement }
+    { placement: `${placement}-start` }
   );
+
+  const { windowWidth } = useWindowWidth();
+
+  const transitions = useTransition(showPopper, {
+    from: { scale: 0 },
+    enter: { scale: 1 },
+    leave: { scale: 0 },
+  })
+
+  if (windowWidth < 1100) {
+    return (
+      <div className='max-w-full flex flex-row'>
+        {techs.map((item, idx) => (
+          <TechIcon key={idx} className='mx-2' name={item} />
+        ))}
+      </div>
+    )
+  }
 
   return (
     <>
@@ -28,28 +49,37 @@ export default function TooltipIconGroup({
         onMouseLeave={() => setShowPopper(false)}
         className='max-w-full flex flex-row'
       >
-        {techs &&
-          techs.map((item, idx) => {
-            return (
-              <div
-                key={idx}
-                onMouseEnter={() => setCurrentText(item)}
-                className='mr-4'
-              >
-                <TechIcon name={item} />
-              </div>
-            );
-          })}
+        {techs.map((item, idx) => {
+          return (
+            <div
+              key={idx}
+              onMouseEnter={() => setCurrentText(item)}
+              className='mx-2'
+            >
+              <TechIcon name={item} />
+            </div>
+          );
+        })}
       </div>
-      {showPopper && (
-        <div
-          ref={setPopperElement}
-          style={styles.popper}
-          {...attributes.popper}
-        >
-          {currentText}
-        </div>
-      )}
+      <div
+        ref={setPopperElement}
+        style={{...styles.popper}}
+        {...attributes.popper}
+      >
+        {transitions((transitionStyles, item) => (
+          item && (
+            <animated.div
+              style={{
+                ...transitionStyles, 
+                transformOrigin: placement === 'right' ? 'left center' : 'right center'
+              }}
+              className='bg-special rounded-lg px-2 py-1 shadow-lg text-background2 font-medium'
+            >
+              {currentText}
+            </animated.div>
+          )
+        ))}
+      </div>
     </>
   );
 }

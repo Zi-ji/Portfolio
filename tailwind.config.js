@@ -36,7 +36,8 @@ module.exports = {
       },
       animation: {
         movingWide: 'movingWide 20s ease-in-out infinite',
-        moving: 'moving 12s ease-in-out infinite'
+        moving: 'moving 12s ease-in-out infinite',
+        grow: 'grow 500ms'
       },
       keyframes: {
         movingWide: {
@@ -46,6 +47,10 @@ module.exports = {
         moving: {
           '0%, 100%': { transform: 'translate3d(0,0,0)' },
           '50%': { transform: 'translate3d(0,30px,0)' }
+        },
+        grow: {
+          '0%, 100%': { transform: 'scale(0)' },
+          '50%': { transform: 'scale(1)' }
         }
       },
       zIndex: {

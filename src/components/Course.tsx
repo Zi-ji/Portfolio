@@ -1,5 +1,6 @@
 import React from 'react';
 import TechIcon from './TechIcon';
+import TooltipIconGroup from './TooltipIconGroup';
 import { CourseProps } from '../types';
 
 export default function Course({
@@ -25,10 +26,8 @@ export default function Course({
       </p>
       <p className='text-lg'>{description}</p>
       <p className="font-semibold">{mark}</p>
-      <div className='absolute bottom-0 right-0 flex flex-row'>
-        {technologies.map((tech, idx) => (
-          <TechIcon key={idx} name={tech} className='mb-2 mr-2' />
-        ))}
+      <div className='absolute bottom-0 right-0 flex flex-row m-2'>
+        <TooltipIconGroup placement='left' techs={technologies} />
       </div>
     </div>
   );

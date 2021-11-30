@@ -4,7 +4,6 @@ import YtbIcon from '../images/youtube.inline.svg';
 import AppStoreIcon from '../images/appStore.inline.svg';
 import { ProjectCardProps } from '../types';
 import TooltipIconGroup from './TooltipIconGroup';
-import TechIcon from './TechIcon';
 
 export default function ProjectCard({
   title,
@@ -19,7 +18,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="project-item">
-      <div className="flex justify-center lg:justify-end">
+      <div className="flex justify-center items-center lg:justify-end">
         <img
           src={image}
           alt={imageAlt}
@@ -44,9 +43,9 @@ export default function ProjectCard({
 
           <p className="text-textColor text-xl my-4">{description}</p>
 
-          <div className="flex flex-row my-2">
-            <p className="text-xl text-textColor font-bold mr-4">
-              Technologies
+          <div className="flex flex-row items-center my-2">
+            <p className="text-xl text-textColor font-bold mr-2">
+              Built with
             </p>
             <TooltipIconGroup techs={technologies} />
           </div>
