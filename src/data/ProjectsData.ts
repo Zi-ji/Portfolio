@@ -14,7 +14,7 @@ export const projectsData: ProjectCardProps[] = [
         'https://www.facebook.com/events/184882760245206/?active_tab=discussion'
     },
     description: `
-      Medician is a health tracking app
+      Medician is a cross-platform health tracking app
       that is intuitive and easy to use.
       You will be able to record details about your symptoms
       and set notifications for your medical + fitness routines.
@@ -30,7 +30,7 @@ export const projectsData: ProjectCardProps[] = [
     tags: ['web'],
     notes: { title: 'UNSW COMP3900 Capstone project' },
     description: `
-      A collaborative platform for teams to
+      TaskHouse is a collaborative platform for teams to
       communicate the state of their tasks,
       for users to connect with their collaborators
       through a user-friendly interface.
@@ -49,7 +49,7 @@ export const projectsData: ProjectCardProps[] = [
         'https://youtu.be/-Ruo8NlrkCo?list=PLtdbwEd-4QWExTxke9BRnkbHv2zXX-_qT&t=335'
     },
     description: `
-      Aims to link a student’s schooling experience with relevant
+      Footsteps aims to link a student’s schooling experience with relevant
       industry mentors who will guide them through their studies
       and decision on future career choices. (MVP)
     `,

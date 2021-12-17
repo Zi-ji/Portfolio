@@ -56,23 +56,21 @@ export default function Home({
               ABOUT ME 🙋‍♂️
             </p>
             <p className="text-lg text-center md:text-left mt-4 font-normal">
-              Zhijie Zhu is currently a 3rd year student studying{' '}
+              Zhijie Zhu is a recent{' '}
               <a
-                href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3784?year=2019"
+                href="https://www.handbook.unsw.edu.au/undergraduate/programs/2019/3778?year=2019"
                 className="link-text"
               >
-                Bachelor of Computer Science and Commerce
+                Computer Science
               </a>{' '}
-              at{' '}
+              graduate from{' '}
               <a href="https://www.unsw.edu.au/" className="link-text">
                 UNSW
               </a>
               . You can also call him Richard. He enjoys thinking, learning new
-              things and making cool stuffs. He is recently learning{' '}
-              <a href="https://reactjs.org/" className="link-text">
-                React
-              </a>
-              .<br />
+              things and making cool stuffs. He is recently learning JavaScript
+              and web technologies.
+              <br />
               <br />
               He is currently based in Sydney. You can learn more about his
               projects and education here. Feel free to{' '}

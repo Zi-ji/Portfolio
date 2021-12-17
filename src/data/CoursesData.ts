@@ -15,7 +15,7 @@ export const coursesData: CourseProps[] = [
     name: 'Object-Oriented Design & Programming',
     description:
       'Building Java programs with object-oriented design principles and design patterns.',
-    mark: '92 HD',
+    mark: '91 HD',
     link: 'https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP2511?year=2021',
     technologies: ['Java']
   },
